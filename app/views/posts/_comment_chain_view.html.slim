@@ -1,0 +1,23 @@
+- new_comment = controller.get_new_comment(parent)
+.container 
+  - unless parent.is_a? Post
+    .container id="collapse-target-#{parent.id}" class="collapse"
+      = render 'comment_form', comment: new_comment, post:@post
+  - parent.get_comments.each do |c|
+    - unless c.new_record?
+      .card.rounded-0.m-1
+        .card-header.d-flex.flex-row.align-items-center
+          span.me-3 
+            = link_to '#', post_path(post)
+          span.me-3
+            = c.creator.email
+          span.me-3.text-muted.fs-6
+            = l(c.created_at, format: '%e %B, %k:%M')
+        .card-body
+          p.card-text
+            = sanitize(c.content)
+        .card-footer
+          = link_to "Ответить", "#", class: "text-decoration-underline text-lowercase", type: "button", data: { bs_toggle: "collapse", bs_target: "#collapse-target-#{c.id}" }, aria: { expanded: "false", controls: "collapse-target-#{c.id}" }
+        .m-1.mb-2
+          = render 'comment_chain_view', post: post, parent: c
+    

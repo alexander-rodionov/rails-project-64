@@ -1,0 +1,21 @@
+container.d-flex.flex-column
+  .container.p-0.my-2
+    ol.breadcrumb
+      li.breadcrumb-item = link_to t('posts.all_posts'), posts_path
+      li.breadcrumb-item.active = post.category.name 
+  h1.mb-4.mb-lg-5 
+    = sanitize(post.title)
+  p 
+    = simple_format(post.body, {}, wrapper_tag: "span", sanitize: true)
+  .d-flex.flex-row.justify-content-between.bg-light.border-top.border-bottom.m-0.p-2
+    .d-flex.flex-row
+      .p.me-5
+        = post.creator_email
+      .p.me-5
+        = post.time_interval
+    .p.d-flex.flex-row
+      .me-2
+        = post.likes_count
+      .m-0
+        =link_to toggle_post_like_path(post), method: :post, data: { turbo_method: :post}, class:"link-dark" do
+          i.bi class="#{controller.has_like? ? "bi-hand-thumbs-up-fill" : "bi-hand-thumbs-up" }"

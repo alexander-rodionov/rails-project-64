@@ -1,0 +1,14 @@
+ru: 
+  user:
+    login: Войти
+    register: Зарегистрироваться 
+    logout: Выйти
+  posts:
+    title: Коллективный блог
+    empty: Нет постов
+    create_post: Новый пост
+    all_posts: Все посты
+  post:
+    liked: Понравилось
+  post_comment:
+    create: Оставить комментарий
