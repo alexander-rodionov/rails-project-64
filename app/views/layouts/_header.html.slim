@@ -3,15 +3,15 @@
       i.bi.bi-signpost-split
     ul.nav.nav-pills
       li.text-muted
-      - if @current_user.nil?
+      - if current_user.nil?
         li.nav-item.me-2 
-          = link_to t("user.login"), login_user_path, class: "nav-link link-dark"
+          = link_to t("user.login"), new_user_session_path, class: "nav-link link-dark"
         li.nav-item.me-2
-          = link_to t("user.register"), new_user_path, class: "nav-link link-dark"
+          = link_to t("user.register"), new_user_registration_path, class: "nav-link link-dark"
       - else
         p.m-2.text-muted 
-          = @current_user&.email
+          = current_user&.email
         li.nav-item.me-2
           = link_to t("posts.create_post"), new_post_path, class: "nav-link link-dark"
         li.nav-item.me-2
-          = link_to t("user.logout"), logout_user_path, class: "nav-link link-dark"
+          = link_to t("user.logout"), destroy_user_session_path, class: "nav-link link-dark"

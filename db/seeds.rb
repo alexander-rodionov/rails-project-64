@@ -12,9 +12,9 @@
   Category.create(name: i)
 end
 
-[ { email: 'johndoe@mail.cc', password: 'password' } ].each do |u|
-  User.create(u)
-end
+# [ { email: 'johndoe@mail.cc', password: 'password' } ].each do |u|
+#   User.create(u)
+# end
 
 [
   { 

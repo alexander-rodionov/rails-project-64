@@ -10,5 +10,6 @@ ru:
     all_posts: Все посты
   post:
     liked: Понравилось
+    create: Создать пост
   post_comment:
     create: Оставить комментарий

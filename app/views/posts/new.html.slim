@@ -1,2 +1,4 @@
-h1 Posts#new
-p Find me in app/views/posts/new.html.slim
+== content_for :title do
+  = t('posts.create_post')
+
+= render('post_form')

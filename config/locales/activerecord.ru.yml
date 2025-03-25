@@ -1,0 +1,9 @@
+ru:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              taken: 'Электронная почта уже зарегистрирована.'
+              

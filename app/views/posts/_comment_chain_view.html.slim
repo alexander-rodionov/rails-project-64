@@ -17,7 +17,9 @@
           p.card-text
             = sanitize(c.content)
         .card-footer
-          = link_to "Ответить", "#", class: "text-decoration-underline text-lowercase", type: "button", data: { bs_toggle: "collapse", bs_target: "#collapse-target-#{c.id}" }, aria: { expanded: "false", controls: "collapse-target-#{c.id}" }
+          = link_to t("comment.reply"), "#", class: "text-decoration-underline text-lowercase", type: "button", 
+              data: { bs_toggle: "collapse", bs_target: "#collapse-target-#{c.id}" }, 
+              aria: { expanded: "false", controls: "collapse-target-#{c.id}" }
         .m-1.mb-2
           = render 'comment_chain_view', post: post, parent: c
     

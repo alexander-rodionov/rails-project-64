@@ -1,0 +1,34 @@
+ru:
+  simple_form:
+    "yes": 'Да'
+    "no": 'Нет'
+    required:
+      text: 'обязательно'
+      mark: '*'
+      # html: '<abbr title="обязательное поле">*</abbr>'
+    error_notification:
+      default_message: "Пожалуйста, исправьте следующие ошибки:"
+    labels:
+      post:
+        title: 'Заголовок'
+        body: 'Текст поста'
+        category_id: 'Категория'
+    # Примеры
+    # labels:
+    #   defaults:
+    #     password: 'Пароль'
+    #   user:
+    #     new:
+    #       email: 'Email для входа'
+    #     edit:
+    #       email: 'Email'
+    # hints:
+    #   defaults:
+    #     username: 'Имя пользователя для входа'
+    #     password: 'Без специальных символов, пожалуйста'
+    # include_blanks:
+    #   defaults:
+    #     age: 'Предпочитаю не указывать'
+    # prompts:
+    #   defaults:
+    #     age: 'Выберите ваш возраст'

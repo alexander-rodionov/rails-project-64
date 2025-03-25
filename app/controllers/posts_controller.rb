@@ -1,8 +1,6 @@
 include ActionView::Helpers::DateHelper
 class PostsController < ApplicationController
-  before_action :assert_logged_in
-  before_action :get_current_user
-  before_action :get_current_post, only: %i[show create]
+  before_action :get_current_post, only: %i[show]
 
   def get_current_post
     @post = Post.find(params.require(:id))
@@ -14,13 +12,19 @@ class PostsController < ApplicationController
 
   def show
     @new_comment = PostComment.new
-    #credirect_to posts_path
+    # redirect_to posts_path
   end
 
   def new
+    @post = Post.new
   end
 
   def create
+    params_permited=params.require(:post).permit(%i[title body category_id]).to_h
+    params_permited['status']='published'
+    params_permited['creator']=current_user
+    new_post = Post.create(params_permited)
+    redirect_to posts_path(new_post.id)
   end
 
 
@@ -35,6 +39,6 @@ class PostsController < ApplicationController
   end
 
   def has_like?
-    @post.post_like.where(creator: @current_user).pluck(:id).any?
+    @post.post_like.where(creator: current_user).pluck(:id).any?
   end
 end

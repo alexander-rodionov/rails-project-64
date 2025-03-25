@@ -6,12 +6,6 @@ class Post < ApplicationRecord
   has_many :post_comment
   has_many :post_like
 
-
-  def show
-    byebug
-    pp 'SHOW'
-  end
-
   def likes_count
     self.post_like.count
   end
