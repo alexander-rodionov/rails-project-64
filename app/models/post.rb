@@ -24,7 +24,7 @@ class Post < ApplicationRecord
     creator&.email
   end
 
-  def get_comments
+  def comments
     post_comments.root_comments.order(created_at: :desc)
   end
 end

@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 categories = [
-  { name: "Кино" },
-  { name: "Спектакли" }
+  { name: 'Кино' },
+  { name: 'Спектакли' }
 ].map do |i|
   Category.create(i)
 end

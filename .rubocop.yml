@@ -5,7 +5,7 @@ inherit_gem: { rubocop-rails-omakase: rubocop.yml }
 #
 # # Use `[a, [b, c]]` not `[ a, [ b, c ] ]`
 # Layout/SpaceInsideArrayLiteralBrackets:
-#   Enabled: false
+#   Enabled: true
 
 Style/StringLiterals:
   EnforcedStyle: single_quotes
@@ -13,67 +13,65 @@ Style/StringLiterals:
   AutoCorrect: true
 
 Style/FrozenStringLiteralComment:
-  Enabled: false
+  Enabled: true
 
 Layout/EmptyLines:
-  Enabled: false
+  Enabled: true
 
 Lint/UnusedBlockArgument:
-  Enabled: false
+  Enabled: true
 
 Style/Lambda:
-  Enabled: false
+  Enabled: true
 
 Layout/HashAlignment:
-  Enabled: false
+  Enabled: true
 
 Bundler/OrderedGems:
-  Enabled: false
+  Enabled: true
 Layout/LeadingEmptyLines:
-  Enabled: false
+  Enabled: true
 Layout/MultilineArrayBraceLayout:
-  Enabled: false
+  Enabled: true
 Layout/MultilineMethodCallIndentation:
-  Enabled: false
+  Enabled: true
 Layout/SpaceAroundOperators:
-  Enabled: false
-Layout/SpaceInsideArrayLiteralBrackets:
   Enabled: true
 Layout/SpaceInsidePercentLiteralDelimiters:
-  Enabled: false
+  Enabled: true
 Lint/RaiseException:
-  Enabled: false
+  Enabled: true
 Lint/UselessAssignment:
-  Enabled: false
+  Enabled: true
 Rails/Blank:
-  Enabled: false
+  Enabled: true
 Rails/FilePath:
-  Enabled: false
+  Enabled: true
 Rails/HttpStatus:
-  Enabled: false
+  Enabled: true
 Rails/RootPathnameMethods:
-  Enabled: false
+  Enabled: true
 Style/Alias:
-  Enabled: false
+  Enabled: true
 Style/EmptyMethod:
-  Enabled: false
-Style/FrozenStringLiteralComment:
-  Enabled: false
+  Enabled: true
 Style/GlobalStdStream:
-  Enabled: false
+  Enabled: true
 Style/NumericLiterals:
-  Enabled: false
+  Enabled: true
 Style/NumericPredicate:
-  Enabled: false
+  Enabled: true
 Style/RaiseArgs:
-  Enabled: false
+  Enabled: true
 Style/RedundantConstantBase:
-  Enabled: false
+  Enabled: true
 Style/RedundantFetchBlock:
-  Enabled: false
+  Enabled: true
 Style/RedundantSelf:
-  Enabled: false
+  Enabled: true
 Style/SymbolArray:
-  Enabled: false
+  Enabled: true
 Style/ZeroLengthPredicate:
-  Enabled: false
+  Enabled: true
+Layout/SpaceInsideArrayLiteralBrackets:
+  Enabled: true

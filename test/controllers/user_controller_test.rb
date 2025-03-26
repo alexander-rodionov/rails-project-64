@@ -13,7 +13,6 @@ class UserControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-
   test 'should sign_in' do
     get user_login_url
     assert_response :success

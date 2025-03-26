@@ -9,7 +9,7 @@ class PostComment < ApplicationRecord
   scope :recent_comments, -> { order(created_at: :desc) }
   delegate :email, to: :user, prefix: true
 
-  def get_comments
+  def comments
     children.recent_comments
   end
 end

@@ -3,9 +3,9 @@
 include ActionView::Helpers::DateHelper
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: %i[index show]
-  before_action :get_current_post, only: %i[show]
+  before_action :parse_current_post, only: %i[show]
 
-  def get_current_post
+  def parse_current_post
     @post = Post.find(params.require(:id))
   rescue ActiveRecord::RecordNotFound
     redirect_to posts_path, alert: t('post.not_found')

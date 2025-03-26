@@ -11,15 +11,19 @@ class PostCommentsControllerTest < ActionDispatch::IntegrationTest
     assert PostComment.size.positive?
   end
 
-  test 'home page' do
-  end
+  # test 'home page' do
+  #   nil
+  # end
 
-  test 'posts listed' do
-  end
+  # test 'posts listed' do
+  #   nil
+  # end
 
-  test 'login possible' do
-  end
+  # test 'login possible' do
+  #   nil
+  # end
 
-  test 'registration possible' do
-  end
+  # test 'registration possible' do
+  #   nil
+  # end
 end

@@ -2,9 +2,9 @@
 
 class LikesController < ApplicationController
   before_action :authenticate_user!
-  before_action :get_post
+  before_action :parse_post
 
-  def get_post
+  def parse_post
     @post = Post.find(params.require(:post_id))
   end
 
