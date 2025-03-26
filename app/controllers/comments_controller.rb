@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
   def create
     values = params.require(:post_comment).permit(:parent_id, :content)
     post = Post.find(params.require(:post_id))
-    parent = values(:parent_id).nil? ? nil : PostComment.find(values[:parent_id])
+    parent = values[:parent_id].nil? ? nil : PostComment.find(values[:parent_id])
     @comment = PostComment.create(parent: parent, post: post, user: current_user, content: values[:content])
     if @comment.new_record?
       error_text = @comment.errors.map do |v|

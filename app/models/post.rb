@@ -4,8 +4,8 @@ class Post < ApplicationRecord
   belongs_to :category
   belongs_to :creator, class_name: "User"
   has_many :post_comment
-  has_many :post_like
-  alias_method :likes, :post_like
+  has_many :post_likes
+  alias_method :likes, :post_likes
   validates :title, length: { minimum: 5, maximum: 255 }
   validates :body, length: { minimum: 200, maximum: 4000 }
 
@@ -13,7 +13,7 @@ class Post < ApplicationRecord
   scope :latest, -> { order(created_at: :desc) }
 
   def likes_count
-    post_like.size
+    post_likes.size
   end
 
   def time_interval

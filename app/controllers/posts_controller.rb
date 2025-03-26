@@ -49,6 +49,6 @@ class PostsController < ApplicationController
   end
 
   def liked_by_current_user?
-    @post.post_like.exists?(user: current_user)
+    @post.post_likes.exists?(user: current_user)
   end
 end

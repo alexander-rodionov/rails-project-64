@@ -24,15 +24,15 @@ class LikesController < ApplicationController
   private
 
   def liked?
-    @post.post_like.exists?(user: current_user)
+    @post.post_likes.exists?(user: current_user)
   end
 
   def like
-    @post.post_like.create(post: @post, user: current_user) unless liked?
+    @post.post_likes.create(post: @post, user: current_user) unless liked?
   end
 
   def unlike
-    @post.post_like.find_by(user: current_user).destroy if liked?
+    @post.post_likes.find_by(user: current_user).destroy if liked?
   end
 
   # def params_permitted
