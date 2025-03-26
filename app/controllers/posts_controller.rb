@@ -23,8 +23,12 @@ class PostsController < ApplicationController
     params_permited=params.require(:post).permit(%i[title body category_id]).to_h
     params_permited['status']='published'
     params_permited['creator']=current_user
-    new_post = Post.create(params_permited)
-    redirect_to posts_path(new_post.id)
+    @post = Post.new(params_permited)
+    if @comment.new_record?
+      render 'posts/new', status: :unprocessable_entity, alert: t('messages.post_create_failed')
+    else
+      redirect_to posts_path(@post), notice: t('messages.post_created')
+    end
   end
 
 

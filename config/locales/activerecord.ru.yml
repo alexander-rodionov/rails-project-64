@@ -1,9 +1,33 @@
 ru:
   activerecord:
+    attributes:
+      post:
+        title: "Заголовок"
+        body: "Сообщение"
+        category: "Категория"
+      post_comment:
+        content: "Тело комментария"
     errors:
       models:
         user:
           attributes:
             email:
-              taken: 'Электронная почта уже зарегистрирована.'
-              
+              taken: 'уже зарегистрирована.'
+              invalid: 'имеет неверный формат'
+            password:
+              too_short: 'слишком короткий'
+        post:
+          attributes:
+            title:
+              too_short: "недостаточной длины (не может быть меньше 5 символов)"
+              too_long: "слишком большой длины (не может быть больше чем 255 символа)"
+            body:
+              too_short: "недостаточной длины (не может быть меньше 200 символов)"
+              too_long: "слишком большой длины (не может быть больше чем 4000 символов)"
+            category:
+                required: "должна быть задана"
+        post_comment:
+          attributes:
+            content:
+              too_short: недостаточной длины (не может быть меньше 5 символов)
+              too_long: слишком большой длины (не может быть больше чем 400 символа)

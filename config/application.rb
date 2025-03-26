@@ -28,7 +28,6 @@ module RailsProject64
     end
 
     config.logger = Logger.new(STDOUT)
-    config.logger = Log4r::Logger.new("Application Log")
     config.log_level = :debug
   end
 end

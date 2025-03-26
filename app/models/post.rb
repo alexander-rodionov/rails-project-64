@@ -5,6 +5,9 @@ class Post < ApplicationRecord
   belongs_to :creator, class_name: "User"
   has_many :post_comment
   has_many :post_like
+  validates :title, length: { minimum: 5, maximum: 255 }
+  validates :body, length: { minimum: 200, maximum: 4000 }
+
 
   def likes_count
     self.post_like.count
