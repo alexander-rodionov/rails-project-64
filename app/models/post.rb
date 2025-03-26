@@ -6,16 +6,18 @@ class Post < ApplicationRecord
   has_many :post_comment
   has_many :post_like
 
+  scope :latest_last, -> order(created_at: :desc)
+  
   def likes_count
-    self.post_like.count
+    post_like.size
   end
 
   def time_interval
-    distance_of_time_in_words(self.created_at, Time.now)
+    distance_of_time_in_words(created_at, Time.current)
   end
 
   def creator_email
-    self.creator.email
+    creator&.email
   end
 
   def get_comments

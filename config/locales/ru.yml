@@ -11,5 +11,6 @@ ru:
   post:
     liked: Понравилось
     create: Создать пост
+    not_found: Пост не найден
   post_comment:
     create: Оставить комментарий

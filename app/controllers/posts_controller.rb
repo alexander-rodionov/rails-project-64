@@ -4,41 +4,50 @@ class PostsController < ApplicationController
 
   def get_current_post
     @post = Post.find(params.require(:id))
+  rescue ActiveRecord::RecordNotFound
+    redirect_to posts_path, alert: t('post.not_found')
   end
 
   def index
-    @posts = Post.order(created_at: :desc).all
+    @posts = Post.latest_last.all
   end
 
   def show
     @new_comment = PostComment.new
-    # redirect_to posts_path
   end
 
   def new
     @post = Post.new
   end
 
-  def create
-    params_permited=params.require(:post).permit(%i[title body category_id]).to_h
-    params_permited['status']='published'
-    params_permited['creator']=current_user
-    new_post = Post.create(params_permited)
-    redirect_to posts_path(new_post.id)
+  def post_params
+    params_permited=params.require(:post).permit(%i[title body category_id])
   end
 
 
-  def get_new_comment(parent)
-    if parent.is_a? Post
-      parent.post_comment.new
-    elsif parent.is_a? PostComment
-      parent.children.new
+  def create
+    @post = Post.new(post_params)
+    @post.status = 'published'
+    @post.creator = current_user
+    if @post.save
+      redirect_to posts_path(@post)
     else
-      raise Exception("Unknown parent. This can't happen")
+      render :new
     end
   end
 
-  def has_like?
-    @post.post_like.where(creator: current_user).pluck(:id).any?
+  def new_comment(parent)
+    case parent
+    when Post
+      parent.post_comment.new
+    ehrn PostComment
+      parent.children.new
+    else
+      raise Exception("Unknown parent type #{parent.class.name}. This can't happen")
+    end
+  end
+
+  def liked_by_current_user?
+    @post.post_like.exists?(creator: current_user)
   end
 end
