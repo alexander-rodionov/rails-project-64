@@ -6,3 +6,22 @@ inherit_gem: { rubocop-rails-omakase: rubocop.yml }
 # # Use `[a, [b, c]]` not `[ a, [ b, c ] ]`
 # Layout/SpaceInsideArrayLiteralBrackets:
 #   Enabled: false
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: single_quotes
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+
+Layout/EmptyLines:
+  Enabled: true
+
+Lint/UnusedBlockArgument:
+  Enabled: true
+
+Style/Lambda:
+  Enabled: true
+
+Layout/HashAlignment:
+  Enabled: true

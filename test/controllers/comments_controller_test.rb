@@ -1,4 +1,4 @@
-require "test_helper"
+require 'test_helper'
 
 class CommentsControllerTest < ActionDispatch::IntegrationTest
   # test "should get create" do

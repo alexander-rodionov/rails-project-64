@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   def get_current_post
     @post = Post.find(params.require(:id))
   rescue ActiveRecord::RecordNotFound
-    redirect_to posts_path, alert: t("post.not_found")
+    redirect_to posts_path, alert: t('post.not_found')
   end
 
   def index
@@ -27,12 +27,12 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    @post.status = "published"
+    @post.status = 'published'
     @post.creator = current_user
     if @post.save
-      redirect_to posts_path(@post), success: t("messages.post_created")
+      redirect_to posts_path(@post), success: t('messages.post_created')
     else
-      flash[:alert] = t("messages.post_create_failed")
+      flash[:alert] = t('messages.post_create_failed')
       render :new, status: 422, alert:
     end
   end

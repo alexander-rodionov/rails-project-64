@@ -6,7 +6,6 @@ categories = [
   Category.create(i)
 end
 
-
 users = [
   {
     email: 'johndoe@mail.cc',
