@@ -1,11 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-# one:
-#   parent_id: MyString
-#   user: one
-#   content: MyText
+one:
+  parent: 
+  user: one
+  content: MyText
 
-# two:
-#   parent_id: MyString
-#   user: two
-#   content: MyText
+two:
+  parent_id: MyString
+  user: two
+  content: MyText

@@ -1,15 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-# one:
-#   title: MyString
-#   category: one
-#   body: MyText
-#   user: one
-#   status: MyString
+one:
+  title: MyStringMyStringMyStringMyStringMyStringMyString
+  category: one
+  body: MyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyText
+  user: one
+  status: 'published'
 
-# two:
-#   title: MyString
-#   category: two
-#   body: MyText
-#   user: two
-#   status: MyString
+two:
+  title: woieurowieurwoieurowieurwoieurowieurwoieurowieurwoieurowieurwoieurowieur
+  category: two
+  body: sljkdfhlaskdjhfakljshdfsljkdfhlaskdjhfakljshdfsljkdfhlaskdjhfakljshdfsljkdfhlaskdjhfakljshdfsljkdfhlaskdjhfakljshdfsljkdfhlaskdjhfakljshdfsljkdfhlaskdjhfakljshdfsljkdfhlaskdjhfakljshdf
+  user: two
+  status: 'published'

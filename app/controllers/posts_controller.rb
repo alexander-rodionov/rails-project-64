@@ -15,14 +15,6 @@ class PostsController < ApplicationController
 
   def show
     @new_comment = PostComment.new
-    Dir.glob('/project/test/controllers/*.rb').each do |filename|
-      next unless File.file?(filename)  # Skip directories
-      
-      puts "\n\n=== Contents of #{filename} ===\n"
-      puts File.read(filename)
-      puts "\n=== End of #{filename} ==="
-    end
-
   end
 
   def new

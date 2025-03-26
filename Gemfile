@@ -72,4 +72,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem 'faker'
+  gem 'minitest-power_assert'
 end
