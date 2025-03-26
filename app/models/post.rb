@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Post < ApplicationRecord
+  include ActionView::Helpers::DateHelper
   belongs_to :category
   belongs_to :creator, class_name: 'User'
   has_many :post_comments
