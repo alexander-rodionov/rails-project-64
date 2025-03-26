@@ -1,8 +1,8 @@
-en-US:
+en:
   user:
-    login: "Sign in"
-    register: "Sign up" 
-    logout: "Sign out"
+    login: "Log in"
+    register: "Sign up"
+    logout: "Log out"
   posts:
     title: "Community Blog"
     empty: "No posts yet"
@@ -11,6 +11,12 @@ en-US:
   post:
     liked: "Liked"
     create: "Create post"
+    not_found: "Post not found"
+    comments_title: "Comments"
   post_comment:
     create: "Add comment"
-    
+    reply: "Reply"
+  messages:
+    comment_created: "Comment published"
+    post_created: "Post published"
+    post_create_failed: "Failed to create post. Please check your input"

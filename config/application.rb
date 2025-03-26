@@ -27,7 +27,9 @@ module RailsProject64
       g.template_engine :slim
     end
 
-    config.logger = Logger.new(STDOUT)
+    Rails.logger = ActiveSupport::TaggedLogging.new(
+      Sentry::Logger.new($stdout)
+    )
     config.log_level = :debug
   end
 end

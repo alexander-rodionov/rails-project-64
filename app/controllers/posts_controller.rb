@@ -28,7 +28,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.status = "published"
-    @post.user = current_user
+    @post.creator = current_user
     if @post.save
       redirect_to posts_path(@post), success: t("messages.post_created")
     else

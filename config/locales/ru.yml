@@ -1,25 +1,23 @@
 ru: 
   user:
-    login: Войти
-    register: Зарегистрироваться 
-    logout: Выйти
+    login: "Войти"
+    register: "Зарегистрироваться"
+    logout: "Выйти"
   posts:
-    title: Коллективный блог
-    empty: Нет постов
-    create_post: Новый пост
-    all_posts: Все посты
+    title: "Коллективный блог"
+    empty: "Нет постов"
+    create_post: "Новый пост"
+    all_posts: "Все посты"
   post:
-    liked: Понравилось
-    create: Создать пост
-    not_found: Пост не найден
-    comments_title: Комментарии
+    liked: "Понравилось"
+    create: "Создать пост"
+    not_found: "Пост не найден"
+    comments_title: "Комментарии"
   post_comment:
-    create: Оставить комментарий
-    reply: Ответить
-  # register:
-  #   success_message: "Добро пожаловать! Вы успешно зарегистрировались."
+    create: "Оставить комментарий"
+    reply: "Ответить"
   messages:
-    comment_created: Комментарий опубликован
-    post_created: Пост опубликован
+    comment_created: "Комментарий опубликован"
+    post_created: "Пост опубликован"
     post_create_failed: "Не удалось создать пост. Проверьте введенные данные"
     

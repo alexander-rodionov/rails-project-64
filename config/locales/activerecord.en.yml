@@ -1,9 +1,45 @@
 en:
   activerecord:
+    attributes:
+      post:
+        title: "Title"
+        body: "Content"
+        category: "Category"
+      post_comment:
+        content: "Comment text"
     errors:
       models:
         user:
           attributes:
             email:
-              taken: 'E-mail already registerred.'
-              
+              taken: 'has already been taken'
+              invalid: 'is invalid'
+            password:
+              too_short: 'is too short (minimum %{count} characters)'
+        post:
+          attributes:
+            title:
+              too_short: "is too short (minimum is 5 characters)"
+              too_long: "is too long (maximum is 255 characters)"
+            body:
+              too_short: "is too short (minimum is 200 characters)"
+              too_long: "is too long (maximum is 4000 characters)"
+            category:
+              required: "must be specified"
+        post_comment:
+          attributes:
+            content:
+              too_short: "is too short (minimum is 5 characters)"
+              too_long: "is too long (maximum is 400 characters)"
+      messages:
+        inclusion: "is not included in the list"
+        exclusion: "is reserved"
+        invalid: "is invalid"
+        confirmation: "doesn't match %{attribute}"
+        accepted: "must be accepted"
+        empty: "can't be empty"
+        blank: "can't be blank"
+        present: "must be blank"
+        too_long: "is too long (maximum is %{count} characters)"
+        too_short: "is too short (minimum is %{count} characters)"
+        wrong_length: "is the wrong length (should be %{count} characters)"              
