@@ -39,3 +39,5 @@
 
 /node_modules
 .qodo
+
+/config/credentials/production.key

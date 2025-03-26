@@ -3,8 +3,7 @@ Rails.application.routes.draw do
 
   root "posts#index"
 
-  # resources :users, only: %i[new create]
-  resource :user, only: %i[login logout] do
+  resource :user, only: %i[] do
     get :login, to: "user#login"
     get :logout, to: "user#logout"
     post :accept, to: "user#accept"
