@@ -4,12 +4,12 @@
 #   title: MyString
 #   category: one
 #   body: MyText
-#   creator: one
+#   user: one
 #   status: MyString
 
 # two:
 #   title: MyString
 #   category: two
 #   body: MyText
-#   creator: two
+#   user: two
 #   status: MyString

@@ -2,7 +2,7 @@
 
 class Post < ApplicationRecord
   belongs_to :category
-  belongs_to :creator, class_name: "User"
+  belongs_to :user, class_name: "User"
   has_many :post_comment
   has_many :post_like
   validates :title, length: { minimum: 5, maximum: 255 }
@@ -19,8 +19,8 @@ class Post < ApplicationRecord
     distance_of_time_in_words(created_at, Time.current)
   end
 
-  def creator_email
-    creator&.email
+  def user_email
+    user&.email
   end
 
   def get_comments

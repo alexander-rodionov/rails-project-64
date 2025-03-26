@@ -10,7 +10,7 @@
           span.me-3 
             = link_to '#', post_path(post)
           span.me-3
-            = c.creator.email
+            = c.user.email
           span.me-3.text-muted.fs-6
             = l(c.created_at, format: '%e %B, %k:%M')
         .card-body

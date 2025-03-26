@@ -2,8 +2,8 @@
 
 # one:
 #   post: one
-#   creator: one
+#   user: one
 
 # two:
 #   post: two
-#   creator: two
+#   user: two

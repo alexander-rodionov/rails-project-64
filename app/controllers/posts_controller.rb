@@ -28,7 +28,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     @post.status = "published"
-    @post.creator = current_user
+    @post.user = current_user
     if @post.save
       redirect_to posts_path(@post), success: t("messages.post_created")
     else
@@ -49,6 +49,6 @@ class PostsController < ApplicationController
   end
 
   def liked_by_current_user?
-    @post.post_like.exists?(creator: current_user)
+    @post.post_like.exists?(user: current_user)
   end
 end
