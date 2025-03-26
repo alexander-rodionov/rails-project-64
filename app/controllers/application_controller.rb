@@ -13,10 +13,8 @@ class ApplicationController < ActionController::Base
       scope.set_context(
         "params",
         params.to_unsafe_h
-      
-      # Add current user context
-      scope.set_user(id: current_user&.id, email: current_user&.email)
-      
+      )
+     
       Sentry.capture_exception(exception)
     end
     raise exception # Re-raise if you want normal error handling
