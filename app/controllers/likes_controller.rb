@@ -13,9 +13,14 @@ class LikesController < ApplicationController
 
   def create
     pp params
+    redirect_to post_path(post_id)
   end
   
   def destroy
     pp params
+    redirect_to post_path(post_id)
   end
+
+  def params_permitted
+    params.require(:like).permit(:id)
 end
