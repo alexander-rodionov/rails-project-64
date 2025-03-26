@@ -1,12 +1,12 @@
-
+# frozen_string_literal: true
 
 class Post < ApplicationRecord
   belongs_to :category
-  belongs_to :creator, class_name: 'User'
+  belongs_to :creator, class_name: "User"
   has_many :post_comments
   has_many :post_likes
-  alias_method :likes, :post_likes
-  alias_method :comments, :post_comments
+  alias likes post_likes
+  alias comments post_comments
   validates :title, length: { minimum: 5, maximum: 255 }
   validates :body, length: { minimum: 200, maximum: 4000 }
 
@@ -25,6 +25,6 @@ class Post < ApplicationRecord
   end
 
   def get_comments
-    self.post_comments.root_comments.order(created_at: :desc)
+    post_comments.root_comments.order(created_at: :desc)
   end
 end

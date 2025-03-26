@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 
 categories = [
   { name: "Кино" },
@@ -9,9 +10,10 @@ end
 users = [
   {
     email: 'johndoe@mail.cc',
-    password: 123456,
+    password: 123_456,
     encrypted_password: User.new.send(:password_digest, '123456')
-  } ].map do |u|
+  }
+].map do |u|
   User.create(u)
 end
 
@@ -38,7 +40,7 @@ posts = [
     status: 'published'
   }
 ]
-.map do |p|
+        .map do |p|
   Post.create(p)
 end
 
@@ -46,5 +48,5 @@ root_post = posts[1]
 author = users[0]
 comment_1 = PostComment.create({ parent: nil, content: 'level 1 comment 1', user: author, post: root_post })
 comment_2 = PostComment.create({ parent: comment_1, content: 'level 2 comment', user: author, post: root_post })
-comment_4 = PostComment.create({ parent: comment_2, content: 'level 3 comment', user: author, post: root_post })
-comment_3 = PostComment.create({ parent: nil, content: 'level 1 comment 2', user: author, post: root_post })
+PostComment.create({ parent: comment_2, content: 'level 3 comment', user: author, post: root_post })
+PostComment.create({ parent: nil, content: 'level 1 comment 2', user: author, post: root_post })

@@ -1,124 +1,27 @@
 code/Gemfile:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
-app-1  | source "https://rubygems.org"
+app-1  | source 'https://rubygems.org'
 app-1  | ^
-app-1  | code/Gemfile:1:8: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | source "https://rubygems.org"
-app-1  |        ^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/Gemfile:4:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "rails", "~> 8.0.2"
-app-1  |     ^^^^^^^
-app-1  | code/Gemfile:4:14: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "rails", "~> 8.0.2"
-app-1  |              ^^^^^^^^^^
-app-1  | code/Gemfile:6:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "sprockets-rails"
-app-1  |     ^^^^^^^^^^^^^^^^^
-app-1  | code/Gemfile:8:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "puma", ">= 5.0"
-app-1  |     ^^^^^^
-app-1  | code/Gemfile:8:13: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "puma", ">= 5.0"
-app-1  |             ^^^^^^^^
-app-1  | code/Gemfile:10:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "jsbundling-rails"
-app-1  |     ^^^^^^^^^^^^^^^^^^
-app-1  | code/Gemfile:12:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "turbo-rails"
-app-1  |     ^^^^^^^^^^^^^
-app-1  | code/Gemfile:14:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "stimulus-rails"
-app-1  |     ^^^^^^^^^^^^^^^^
-app-1  | code/Gemfile:16:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "jbuilder"
-app-1  |     ^^^^^^^^^^
-app-1  | code/Gemfile:27:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "tzinfo-data", platforms: %i[ windows jruby ]
-app-1  |     ^^^^^^^^^^^^^
 app-1  | code/Gemfile:27:34: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
-app-1  | gem "tzinfo-data", platforms: %i[ windows jruby ]
+app-1  | gem 'tzinfo-data', platforms: %i[ windows jruby ]
 app-1  |                                  ^
 app-1  | code/Gemfile:27:48: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
-app-1  | gem "tzinfo-data", platforms: %i[ windows jruby ]
+app-1  | gem 'tzinfo-data', platforms: %i[ windows jruby ]
 app-1  |                                                ^
-app-1  | code/Gemfile:30:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "bootsnap", require: false
-app-1  |     ^^^^^^^^^^
-app-1  | code/Gemfile:32:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "cssbundling-rails"
-app-1  |     ^^^^^^^^^^^^^^^^^^^
-app-1  | code/Gemfile:33:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "slim-rails"
-app-1  |     ^^^^^^^^^^^^
 app-1  | code/Gemfile:34:1: C: [Correctable] Bundler/OrderedGems: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem simple_form should appear before slim-rails.
-app-1  | gem "simple_form"
+app-1  | gem 'simple_form'
 app-1  | ^^^^^^^^^^^^^^^^^
-app-1  | code/Gemfile:34:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "simple_form"
-app-1  |     ^^^^^^^^^^^^^
 app-1  | code/Gemfile:35:1: C: [Correctable] Bundler/OrderedGems: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem ancestry should appear before simple_form.
-app-1  | gem "ancestry"
+app-1  | gem 'ancestry'
 app-1  | ^^^^^^^^^^^^^^
-app-1  | code/Gemfile:35:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "ancestry"
-app-1  |     ^^^^^^^^^^
-app-1  | code/Gemfile:36:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "devise"
-app-1  |     ^^^^^^^^
-app-1  | code/Gemfile:37:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "devise-i18n"
-app-1  |     ^^^^^^^^^^^^^
-app-1  | code/Gemfile:39:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | gem "sentry-rails"
-app-1  |     ^^^^^^^^^^^^^^
-app-1  | code/Gemfile:45:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   gem "pg"
-app-1  |       ^^^^
-app-1  | code/Gemfile:48:1: C: [Correctable] Layout/EmptyLines: Extra blank line detected.
-app-1  | code/Gemfile:51:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
-app-1  |       ^^^^^^^
-app-1  | code/Gemfile:51:30: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
-app-1  |   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+app-1  | code/Gemfile:50:30: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+app-1  |   gem 'debug', platforms: %i[ mri windows ], require: 'debug/prelude'
 app-1  |                              ^
-app-1  | code/Gemfile:51:42: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
-app-1  |   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+app-1  | code/Gemfile:50:42: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
+app-1  |   gem 'debug', platforms: %i[ mri windows ], require: 'debug/prelude'
 app-1  |                                          ^
-app-1  | code/Gemfile:51:55: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
-app-1  |                                                       ^^^^^^^^^^^^^^^
-app-1  | code/Gemfile:54:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   gem "brakeman", require: false
-app-1  |       ^^^^^^^^^^
-app-1  | code/Gemfile:57:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   gem "rubocop-rails-omakase", require: false
-app-1  |       ^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/Gemfile:60:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   gem "sqlite3", ">= 1.4"
-app-1  |       ^^^^^^^^^
-app-1  | code/Gemfile:60:18: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   gem "sqlite3", ">= 1.4"
-app-1  |                  ^^^^^^^^
-app-1  | code/Gemfile:62:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   gem "byebug"
-app-1  |       ^^^^^^^^
-app-1  | code/Gemfile:67:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   gem "web-console"
-app-1  |       ^^^^^^^^^^^^^
-app-1  | code/Gemfile:72:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   gem "capybara"
-app-1  |       ^^^^^^^^^^
-app-1  | code/Gemfile:73:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   gem "selenium-webdriver"
-app-1  |       ^^^^^^^^^^^^^^^^^^^^
-app-1  | code/Gemfile:74:3: C: [Correctable] Bundler/OrderedGems: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem faker should appear before selenium-webdriver.
-app-1  |   gem "faker"
+app-1  | code/Gemfile:73:3: C: [Correctable] Bundler/OrderedGems: Gems should be sorted in an alphabetical order within their section of the Gemfile. Gem faker should appear before selenium-webdriver.
+app-1  |   gem 'faker'
 app-1  |   ^^^^^^^^^^^
-app-1  | code/Gemfile:74:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   gem "faker"
-app-1  |       ^^^^^^^
-app-1  | code/Gemfile:75:7: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   gem "minitest-power_assert"
-app-1  |       ^^^^^^^^^^^^^^^^^^^^^^^
 app-1  | code/Rakefile:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
 app-1  | # Add your own tasks in files placed in lib/tasks ending in .rake,
 app-1  | ^
@@ -134,18 +37,12 @@ app-1  | ^
 app-1  | code/app/controllers/application_controller.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
 app-1  | class ApplicationController < ActionController::Base
 app-1  | ^
-app-1  | code/app/controllers/application_controller.rb:13:9: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |         "params",
-app-1  |         ^^^^^^^^
 app-1  | code/app/controllers/comments_controller.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
 app-1  | class CommentsController < ApplicationController
 app-1  | ^
 app-1  | code/app/controllers/comments_controller.rb:6:14: C: [Correctable] Rails/Blank: Use values[:parent_id].blank? instead of values[:parent_id].nil? || values[:parent_id].empty?.
 app-1  |     parent = values[:parent_id].nil? || values[:parent_id].empty? ? nil : PostComment.find(values[:parent_id])
 app-1  |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/app/controllers/comments_controller.rb:14:50: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       redirect_to post_path(post.id), success: t("messages.comment_created")
-app-1  |                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
 app-1  | code/app/controllers/likes_controller.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
 app-1  | class LikesController < ApplicationController
 app-1  | ^
@@ -156,26 +53,14 @@ app-1  | code/app/controllers/monitor_controller.rb:1:1: C: [Correctable] Style/
 app-1  | class MonitorController < ApplicationController
 app-1  | ^
 app-1  | code/app/controllers/monitor_controller.rb:4:5: C: [Correctable] Style/RaiseArgs: Provide an exception class and message as arguments to raise.
-app-1  |     raise Exception.new("Test exception")
+app-1  |     raise Exception.new('Test exception')
 app-1  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 app-1  | code/app/controllers/monitor_controller.rb:4:11: W: [Correctable] Lint/RaiseException: Use StandardError over Exception.
-app-1  |     raise Exception.new("Test exception")
+app-1  |     raise Exception.new('Test exception')
 app-1  |           ^^^^^^^^^
-app-1  | code/app/controllers/monitor_controller.rb:4:25: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     raise Exception.new("Test exception")
-app-1  |                         ^^^^^^^^^^^^^^^^
 app-1  | code/app/controllers/monitor_controller.rb:5:5: W: Lint/UnreachableCode: Unreachable code detected.
-app-1  |     redirect_to "/"
+app-1  |     redirect_to '/'
 app-1  |     ^^^^^^^^^^^^^^^
-app-1  | code/app/controllers/monitor_controller.rb:5:17: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     redirect_to "/"
-app-1  |                 ^^^
-app-1  | code/app/controllers/monitor_controller.rb:10:44: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     Sentry.capture_exception(Exception.new("Sentry test exception"))
-app-1  |                                            ^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/app/controllers/monitor_controller.rb:11:17: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     redirect_to "/"
-app-1  |                 ^^^
 app-1  | code/app/controllers/posts_controller.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
 app-1  | include ActionView::Helpers::DateHelper
 app-1  | ^
@@ -185,24 +70,12 @@ app-1  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 app-1  | code/app/controllers/posts_controller.rb:6:7: C: Naming/AccessorMethodName: Do not prefix reader method names with get_.
 app-1  |   def get_current_post
 app-1  |       ^^^^^^^^^^^^^^^^
-app-1  | code/app/controllers/posts_controller.rb:9:38: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     redirect_to posts_path, alert: t("post.not_found")
-app-1  |                                      ^^^^^^^^^^^^^^^^
 app-1  | code/app/controllers/posts_controller.rb:25:5: W: [Correctable] Lint/UselessAssignment: Useless assignment to variable - params_permited.
 app-1  |     params_permited=params.require(:post).permit(%i[title body category_id])
 app-1  |     ^^^^^^^^^^^^^^^
 app-1  | code/app/controllers/posts_controller.rb:25:20: C: [Correctable] Layout/SpaceAroundOperators: Surrounding space missing for operator =.
 app-1  |     params_permited=params.require(:post).permit(%i[title body category_id])
 app-1  |                    ^
-app-1  | code/app/controllers/posts_controller.rb:30:20: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     @post.status = "published"
-app-1  |                    ^^^^^^^^^^^
-app-1  | code/app/controllers/posts_controller.rb:33:49: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       redirect_to posts_path(@post), success: t("messages.post_created")
-app-1  |                                                 ^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/app/controllers/posts_controller.rb:35:25: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       flash[:alert] = t("messages.post_create_failed")
-app-1  |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 app-1  | code/app/controllers/posts_controller.rb:36:28: C: [Correctable] Rails/HttpStatus: Prefer :unprocessable_content over 422 to define HTTP status code.
 app-1  |       render :new, status: 422, alert:
 app-1  |                            ^^^
@@ -257,12 +130,6 @@ app-1  | ^
 app-1  | code/app/mailers/application_mailer.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
 app-1  | class ApplicationMailer < ActionMailer::Base
 app-1  | ^
-app-1  | code/app/mailers/application_mailer.rb:2:17: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   default from: "from@example.com"
-app-1  |                 ^^^^^^^^^^^^^^^^^^
-app-1  | code/app/mailers/application_mailer.rb:3:10: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   layout "mailer"
-app-1  |          ^^^^^^^^
 app-1  | code/app/models/application_record.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
 app-1  | class ApplicationRecord < ActiveRecord::Base
 app-1  | ^
@@ -273,40 +140,27 @@ app-1  | code/app/models/post.rb:1:1: C: [Correctable] Style/FrozenStringLiteral
 app-1  | code/app/models/post.rb:3:1: C: [Correctable] Layout/LeadingEmptyLines: Unnecessary blank line at the beginning of the source.
 app-1  | class Post < ApplicationRecord
 app-1  | ^^^^^
-app-1  | code/app/models/post.rb:5:36: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   belongs_to :creator, class_name: "User"
-app-1  |                                    ^^^^^^
 app-1  | code/app/models/post.rb:8:3: C: [Correctable] Style/Alias: Use alias instead of alias_method in a class body.
 app-1  |   alias_method :likes, :post_likes
 app-1  |   ^^^^^^^^^^^^
 app-1  | code/app/models/post.rb:9:3: C: [Correctable] Style/Alias: Use alias instead of alias_method in a class body.
 app-1  |   alias_method :comments, :post_comments
 app-1  |   ^^^^^^^^^^^^
-app-1  | code/app/models/post.rb:13:1: C: [Correctable] Layout/EmptyLines: Extra blank line detected.
-app-1  | code/app/models/post.rb:28:7: C: Naming/AccessorMethodName: Do not prefix reader method names with get_.
+app-1  | code/app/models/post.rb:27:7: C: Naming/AccessorMethodName: Do not prefix reader method names with get_.
 app-1  |   def get_comments
 app-1  |       ^^^^^^^^^^^^
-app-1  | code/app/models/post.rb:29:5: C: [Correctable] Style/RedundantSelf: Redundant self detected.
+app-1  | code/app/models/post.rb:28:5: C: [Correctable] Style/RedundantSelf: Redundant self detected.
 app-1  |     self.post_comments.root_comments.order(created_at: :desc)
 app-1  |     ^^^^
 app-1  | code/app/models/post_comment.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
 app-1  | class PostComment < ApplicationRecord
 app-1  | ^
-app-1  | code/app/models/post_comment.rb:2:33: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   belongs_to :user, class_name: "User"
-app-1  |                                 ^^^^^^
-app-1  | code/app/models/post_comment.rb:6:46: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   scope :root_comments, -> { where(ancestry: "/") }
-app-1  |                                              ^^^
 app-1  | code/app/models/post_comment.rb:10:7: C: Naming/AccessorMethodName: Do not prefix reader method names with get_.
 app-1  |   def get_comments
 app-1  |       ^^^^^^^^^^^^
 app-1  | code/app/models/post_like.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
 app-1  | class PostLike < ApplicationRecord
 app-1  | ^
-app-1  | code/app/models/post_like.rb:3:33: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   belongs_to :user, class_name: "User"
-app-1  |                                 ^^^^^^
 app-1  | code/app/models/user.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
 app-1  | class User < ApplicationRecord
 app-1  | ^
@@ -317,74 +171,26 @@ app-1  | code/config.ru:3:18: C: [Correctable] Style/StringLiterals: Prefer sing
 app-1  | require_relative "config/environment"
 app-1  |                  ^^^^^^^^^^^^^^^^^^^^
 app-1  | code/config/application.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
-app-1  | require_relative "boot"
+app-1  | require_relative 'boot'
 app-1  | ^
-app-1  | code/config/application.rb:1:18: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | require_relative "boot"
-app-1  |                  ^^^^^^
-app-1  | code/config/application.rb:3:9: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | require "rails/all"
-app-1  |         ^^^^^^^^^^^
 app-1  | code/config/boot.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
-app-1  | ENV["BUNDLE_GEMFILE"] ||= File.expand_path("../Gemfile", __dir__)
+app-1  | ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../Gemfile', __dir__)
 app-1  | ^
-app-1  | code/config/boot.rb:1:5: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | ENV["BUNDLE_GEMFILE"] ||= File.expand_path("../Gemfile", __dir__)
-app-1  |     ^^^^^^^^^^^^^^^^
-app-1  | code/config/boot.rb:1:44: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | ENV["BUNDLE_GEMFILE"] ||= File.expand_path("../Gemfile", __dir__)
-app-1  |                                            ^^^^^^^^^^^^
-app-1  | code/config/boot.rb:3:9: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | require "bundler/setup" # Set up gems listed in the Gemfile.
-app-1  |         ^^^^^^^^^^^^^^^
-app-1  | code/config/boot.rb:4:9: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | require "bootsnap/setup" # Speed up boot time by caching expensive operations.
-app-1  |         ^^^^^^^^^^^^^^^^
 app-1  | code/config/environment.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
 app-1  | # Load the Rails application.
 app-1  | ^
-app-1  | code/config/environment.rb:2:18: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | require_relative "application"
-app-1  |                  ^^^^^^^^^^^^^
 app-1  | code/config/environments/development.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
-app-1  | require "active_support/core_ext/integer/time"
+app-1  | require 'active_support/core_ext/integer/time'
 app-1  | ^
-app-1  | code/config/environments/development.rb:1:9: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | require "active_support/core_ext/integer/time"
-app-1  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/environments/development.rb:22:22: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   if Rails.root.join("tmp/caching-dev.txt").exist?
-app-1  |                      ^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/environments/development.rb:27:43: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     config.public_file_server.headers = { "Cache-Control" => "public, max-age=#{2.days.to_i}" }
-app-1  |                                           ^^^^^^^^^^^^^^^
-app-1  | code/config/environments/development.rb:44:54: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.action_mailer.default_url_options = { host: "localhost", port: 3000 }
-app-1  |                                                      ^^^^^^^^^^^
-app-1  | code/config/environments/development.rb:84:62: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.action_controller.default_url_options = { host: ENV["CODESPACE_NAME"] ? "#{ENV['CODESPACE_NAME']}-3000.app.github.dev" : "localhost:3000" }
-app-1  |                                                              ^^^^^^^^^^^^^^^^
-app-1  | code/config/environments/development.rb:84:131: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.action_controller.default_url_options = { host: ENV["CODESPACE_NAME"] ? "#{ENV['CODESPACE_NAME']}-3000.app.github.dev" : "localhost:3000" }
-app-1  |                                                                                                                                   ^^^^^^^^^^^^^^^^
 app-1  | code/config/environments/development.rb:86:41: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
-app-1  |   config.web_console.whitelisted_ips = [ "0.0.0.0/0", "::/0" ]
+app-1  |   config.web_console.whitelisted_ips = [ '0.0.0.0/0', '::/0' ]
 app-1  |                                         ^
-app-1  | code/config/environments/development.rb:86:42: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.web_console.whitelisted_ips = [ "0.0.0.0/0", "::/0" ]
-app-1  |                                          ^^^^^^^^^^^
-app-1  | code/config/environments/development.rb:86:55: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.web_console.whitelisted_ips = [ "0.0.0.0/0", "::/0" ]
-app-1  |                                                       ^^^^^^
 app-1  | code/config/environments/development.rb:86:61: C: Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
-app-1  |   config.web_console.whitelisted_ips = [ "0.0.0.0/0", "::/0" ]
+app-1  |   config.web_console.whitelisted_ips = [ '0.0.0.0/0', '::/0' ]
 app-1  |                                                             ^
 app-1  | code/config/environments/production.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
-app-1  | require "active_support/core_ext/integer/time"
+app-1  | require 'active_support/core_ext/integer/time'
 app-1  | ^
-app-1  | code/config/environments/production.rb:1:9: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | require "active_support/core_ext/integer/time"
-app-1  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 app-1  | code/config/environments/production.rb:58:45: C: [Correctable] Style/GlobalStdStream: Use $stdout instead of STDOUT.
 app-1  |   config.logger = ActiveSupport::Logger.new(STDOUT)
 app-1  |                                             ^^^^^^
@@ -403,12 +209,6 @@ app-1  |                      ^
 app-1  | code/config/environments/production.rb:63:34: C: Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
 app-1  |   config.log_tags = [ :request_id ]
 app-1  |                                  ^
-app-1  | code/config/environments/production.rb:68:32: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.log_level = ENV.fetch("RAILS_LOG_LEVEL", "info")
-app-1  |                                ^^^^^^^^^^^^^^^^^
-app-1  | code/config/environments/production.rb:68:51: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.log_level = ENV.fetch("RAILS_LOG_LEVEL", "info")
-app-1  |                                                   ^^^^^^
 app-1  | code/config/environments/production.rb:96:50: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
 app-1  |   config.active_record.attributes_for_inspect = [ :id ]
 app-1  |                                                  ^
@@ -416,32 +216,14 @@ app-1  | code/config/environments/production.rb:96:54: C: Layout/SpaceInsideArra
 app-1  |   config.active_record.attributes_for_inspect = [ :id ]
 app-1  |                                                      ^
 app-1  | code/config/environments/test.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
-app-1  | require "active_support/core_ext/integer/time"
+app-1  | require 'active_support/core_ext/integer/time'
 app-1  | ^
-app-1  | code/config/environments/test.rb:1:9: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | require "active_support/core_ext/integer/time"
-app-1  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/environments/test.rb:18:27: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.eager_load = ENV["CI"].present?
-app-1  |                           ^^^^
-app-1  | code/config/environments/test.rb:21:41: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.public_file_server.headers = { "Cache-Control" => "public, max-age=#{1.hour.to_i}" }
-app-1  |                                         ^^^^^^^^^^^^^^^
-app-1  | code/config/environments/test.rb:48:54: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.action_mailer.default_url_options = { host: "www.example.com" }
-app-1  |                                                      ^^^^^^^^^^^^^^^^^
 app-1  | code/config/initializers/ancestry.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
 app-1  | Ancestry.default_ancestry_format = :materialized_path2
 app-1  | ^
 app-1  | code/config/initializers/assets.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
 app-1  | # Be sure to restart your server when you modify this file.
 app-1  | ^
-app-1  | code/config/initializers/assets.rb:4:43: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | Rails.application.config.assets.version = "1.0"
-app-1  |                                           ^^^^^
-app-1  | code/config/initializers/assets.rb:8:58: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | Rails.application.config.assets.paths << Rails.root.join("node_modules/bootstrap-icons/font")
-app-1  |                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 app-1  | code/config/initializers/assets.rb:14:50: C: [Correctable] Layout/SpaceInsidePercentLiteralDelimiters: Do not use spaces inside percent literal delimiters.
 app-1  | Rails.application.config.assets.precompile += %w[ custom.css ]
 app-1  |                                                  ^
@@ -451,12 +233,6 @@ app-1  |                                                             ^
 app-1  | code/config/initializers/content_security_policy.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
 app-1  | # Be sure to restart your server when you modify this file.
 app-1  | ^
-app-1  | code/config/initializers/devise.rb:27:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.mailer_sender = "please-change-me-at-config-initializers-devise@example.com"
-app-1  |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/devise.rb:39:11: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   require "devise/orm/active_record"
-app-1  |           ^^^^^^^^^^^^^^^^^^^^^^^^^^
 app-1  | code/config/initializers/devise.rb:61:35: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
 app-1  |   config.case_insensitive_keys = [ :email ]
 app-1  |                                   ^
@@ -485,23 +261,14 @@ app-1  | code/config/initializers/inflections.rb:1:1: C: [Correctable] Style/Fro
 app-1  | # Be sure to restart your server when you modify this file.
 app-1  | ^
 app-1  | code/config/initializers/locale.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
-app-1  | I18n.load_path += Dir[Rails.root.join("config", "locale", "*.{rb,yml}")]
+app-1  | I18n.load_path += Dir[Rails.root.join('config', 'locale', '*.{rb,yml}')]
 app-1  | ^
 app-1  | code/config/initializers/locale.rb:1:19: C: [Correctable] Rails/RootPathnameMethods: Rails.root is a Pathname, so you can use Rails.root.glob('config/locale/*.{rb,yml}').
-app-1  | I18n.load_path += Dir[Rails.root.join("config", "locale", "*.{rb,yml}")]
+app-1  | I18n.load_path += Dir[Rails.root.join('config', 'locale', '*.{rb,yml}')]
 app-1  |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 app-1  | code/config/initializers/locale.rb:1:23: C: [Correctable] Rails/FilePath: Prefer Rails.root.join('path/to').
-app-1  | I18n.load_path += Dir[Rails.root.join("config", "locale", "*.{rb,yml}")]
+app-1  | I18n.load_path += Dir[Rails.root.join('config', 'locale', '*.{rb,yml}')]
 app-1  |                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/locale.rb:1:39: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | I18n.load_path += Dir[Rails.root.join("config", "locale", "*.{rb,yml}")]
-app-1  |                                       ^^^^^^^^
-app-1  | code/config/initializers/locale.rb:1:49: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | I18n.load_path += Dir[Rails.root.join("config", "locale", "*.{rb,yml}")]
-app-1  |                                                 ^^^^^^^^
-app-1  | code/config/initializers/locale.rb:1:59: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  | I18n.load_path += Dir[Rails.root.join("config", "locale", "*.{rb,yml}")]
-app-1  |                                                           ^^^^^^^^^^^^
 app-1  | code/config/initializers/locale.rb:2:26: C: [Correctable] Style/SymbolArray: Use %i or %I for an array of symbols.
 app-1  | I18n.available_locales = [ :ru, :en ]
 app-1  |                          ^^^^^^^^^^^^
@@ -518,502 +285,143 @@ app-1  | code/config/initializers/sentry.rb:1:1: C: [Correctable] Style/FrozenSt
 app-1  | code/config/initializers/sentry.rb:2:1: C: [Correctable] Layout/LeadingEmptyLines: Unnecessary blank line at the beginning of the source.
 app-1  | Sentry.init do |config|
 app-1  | ^^^^^^
-app-1  | code/config/initializers/sentry.rb:3:20: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.dsn = ENV["SENTRY_DSN"] || "https://a4f72f0bebde422ca8aaeea8daacf6b7@app.glitchtip.com/10780"
-app-1  |                    ^^^^^^^^^^^^
-app-1  | code/config/initializers/sentry.rb:3:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.dsn = ENV["SENTRY_DSN"] || "https://a4f72f0bebde422ca8aaeea8daacf6b7@app.glitchtip.com/10780"
-app-1  |                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form.rb:18:5: C: [Correctable] Layout/HashAlignment: Align the keys of a hash literal if they span more than one line.
-app-1  |     hint_class: :field_with_hint, error_class: :field_with_errors, valid_class: :field_without_errors do |b|
-app-1  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form.rb:78:25: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.button_class = "btn"
-app-1  |                         ^^^^^
-app-1  | code/config/initializers/simple_form.rb:89:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.error_notification_class = "error_notification"
-app-1  |                                     ^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form.rb:165:32: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.boolean_label_class = "checkbox"
-app-1  |                                ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:16:25: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.button_class = "btn"
-app-1  |                         ^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:19:32: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.boolean_label_class = "form-check-label"
-app-1  |                                ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:22:23: C: [Correctable] Style/Lambda: Use the -> { ... } lambda literal syntax for single line lambdas.
-app-1  |   config.label_text = lambda { |label, required, explicit_label| "#{label} #{required}" }
-app-1  |                       ^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:22:50: W: [Correctable] Lint/UnusedBlockArgument: Unused block argument - explicit_label. If it's necessary, use _ or _explicit_label as an argument name to indicate that it won't be used.
-app-1  |   config.label_text = lambda { |label, required, explicit_label| "#{label} #{required}" }
-app-1  |                                                  ^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:35:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.error_notification_class = "alert alert-danger"
-app-1  |                                     ^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:43:36: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.input_field_error_class = "is-invalid"
-app-1  |                                    ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:44:36: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.input_field_valid_class = "is-valid"
-app-1  |                                    ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:46:1: C: [Correctable] Layout/EmptyLines: Extra blank line detected.
-app-1  | code/config/initializers/simple_form_bootstrap.rb:50:42: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :vertical_form, class: "mb-3" do |b|
-app-1  |                                          ^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:58:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :label, class: "form-label"
-app-1  |                          ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:59:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-control", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                          ^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:59:55: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-control", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                       ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:59:82: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-control", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                  ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:60:44: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :full_error, wrap_with: { class: "invalid-feedback" }
-app-1  |                                            ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:61:38: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :hint, wrap_with: { class: "form-text" }
-app-1  |                                      ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:65:43: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :vertical_boolean, tag: "fieldset", class: "mb-3" do |b|
-app-1  |                                           ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:65:62: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :vertical_boolean, tag: "fieldset", class: "mb-3" do |b|
-app-1  |                                                              ^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:68:43: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.wrapper :form_check_wrapper, class: "form-check" do |bb|
-app-1  |                                           ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:69:29: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       bb.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                             ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:69:62: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       bb.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                              ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:69:89: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       bb.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                         ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:70:29: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       bb.use :label, class: "form-check-label"
-app-1  |                             ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:71:47: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       bb.use :full_error, wrap_with: { class: "invalid-feedback" }
-app-1  |                                               ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:72:41: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       bb.use :hint, wrap_with: { class: "form-text" }
-app-1  |                                         ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:77:61: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :vertical_collection, item_wrapper_class: "form-check", item_label_class: "form-check-label", tag: "fieldset", class: "mb-3" do |b|
-app-1  |                                                             ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:77:93: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :vertical_collection, item_wrapper_class: "form-check", item_label_class: "form-check-label", tag: "fieldset", class: "mb-3" do |b|
-app-1  |                                                                                             ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:77:118: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :vertical_collection, item_wrapper_class: "form-check", item_label_class: "form-check-label", tag: "fieldset", class: "mb-3" do |b|
-app-1  |                                                                                                                      ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:77:137: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :vertical_collection, item_wrapper_class: "form-check", item_label_class: "form-check-label", tag: "fieldset", class: "mb-3" do |b|
-app-1  |                                                                                                                                         ^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:80:33: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.wrapper :legend_tag, tag: "legend", class: "col-form-label pt-0" do |ba|
-app-1  |                                 ^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:80:50: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.wrapper :legend_tag, tag: "legend", class: "col-form-label pt-0" do |ba|
-app-1  |                                                  ^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:83:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                          ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:83:59: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                           ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:83:86: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                      ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:84:44: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :full_error, wrap_with: { class: "invalid-feedback d-block" }
-app-1  |                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:85:38: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :hint, wrap_with: { class: "form-text" }
-app-1  |                                      ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:89:68: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :vertical_collection_inline, item_wrapper_class: "form-check form-check-inline", item_label_class: "form-check-label", tag: "fieldset", class: "mb-3" do |b|
-app-1  |                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:89:118: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :vertical_collection_inline, item_wrapper_class: "form-check form-check-inline", item_label_class: "form-check-label", tag: "fieldset", class: "mb-3" do |b|
-app-1  |                                                                                                                      ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:89:143: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :vertical_collection_inline, item_wrapper_class: "form-check form-check-inline", item_label_class: "form-check-label", tag: "fieldset", class: "mb-3" do |b|
-app-1  |                                                                                                                                               ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:89:162: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :vertical_collection_inline, item_wrapper_class: "form-check form-check-inline", item_label_class: "form-check-label", tag: "fieldset", class: "mb-3" do |b|
-app-1  |                                                                                                                                                                  ^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:92:33: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.wrapper :legend_tag, tag: "legend", class: "col-form-label pt-0" do |ba|
-app-1  |                                 ^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:92:50: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.wrapper :legend_tag, tag: "legend", class: "col-form-label pt-0" do |ba|
-app-1  |                                                  ^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:95:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                          ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:95:59: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                           ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:95:86: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                      ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:96:44: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :full_error, wrap_with: { class: "invalid-feedback d-block" }
-app-1  |                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:97:38: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :hint, wrap_with: { class: "form-text" }
-app-1  |                                      ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:101:42: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :vertical_file, class: "mb-3" do |b|
-app-1  |                                          ^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:107:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :label, class: "form-label"
-app-1  |                          ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:108:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-control", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                          ^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:108:55: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-control", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                       ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:108:82: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-control", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                  ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:109:44: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :full_error, wrap_with: { class: "invalid-feedback" }
-app-1  |                                            ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:110:38: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :hint, wrap_with: { class: "form-text" }
-app-1  |                                      ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:114:44: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :vertical_select, class: "mb-3" do |b|
-app-1  |                                            ^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:117:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :label, class: "form-label"
-app-1  |                          ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:118:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-select", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                          ^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:118:54: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-select", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                      ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:118:81: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-select", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                 ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:119:44: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :full_error, wrap_with: { class: "invalid-feedback" }
-app-1  |                                            ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:120:38: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :hint, wrap_with: { class: "form-text" }
-app-1  |                                      ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:124:50: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :vertical_multi_select, class: "mb-3" do |b|
-app-1  |                                                  ^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:127:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :label, class: "form-label"
-app-1  |                          ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:128:22: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.wrapper class: "d-flex flex-row justify-content-between align-items-center" do |ba|
-app-1  |                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:129:29: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-select mx-1", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                             ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:129:62: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-select mx-1", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                              ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:129:89: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-select mx-1", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                         ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:131:44: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :full_error, wrap_with: { class: "invalid-feedback d-block" }
-app-1  |                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:132:38: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :hint, wrap_with: { class: "form-text" }
-app-1  |                                      ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:136:43: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :vertical_range, class: "mb-3" do |b|
-app-1  |                                           ^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:141:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :label, class: "form-label"
-app-1  |                          ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:142:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-range", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                          ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:142:53: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-range", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                     ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:142:80: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-range", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:143:44: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :full_error, wrap_with: { class: "invalid-feedback" }
-app-1  |                                            ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:144:38: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :hint, wrap_with: { class: "form-text" }
-app-1  |                                      ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:147:1: C: [Correctable] Layout/EmptyLines: Extra blank line detected.
-app-1  | code/config/initializers/simple_form_bootstrap.rb:151:44: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :horizontal_form, class: "row mb-3" do |b|
-app-1  |                                            ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:159:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :label, class: "col-sm-3 col-form-label"
-app-1  |                          ^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:160:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.wrapper :grid_wrapper, class: "col-sm-9" do |ba|
-app-1  |                                     ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:161:29: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-control", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                             ^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:161:58: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-control", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                          ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:161:85: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-control", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                     ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:162:47: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :full_error, wrap_with: { class: "invalid-feedback" }
-app-1  |                                               ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:163:41: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :hint, wrap_with: { class: "form-text" }
-app-1  |                                         ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:168:47: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :horizontal_boolean, class: "row mb-3" do |b|
-app-1  |                                               ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:171:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.wrapper :grid_wrapper, class: "col-sm-9 offset-sm-3" do |wr|
-app-1  |                                     ^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:172:46: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       wr.wrapper :form_check_wrapper, class: "form-check" do |bb|
-app-1  |                                              ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:173:31: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |         bb.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                               ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:173:64: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |         bb.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:173:91: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |         bb.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                           ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:174:31: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |         bb.use :label, class: "form-check-label"
-app-1  |                               ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:175:49: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |         bb.use :full_error, wrap_with: { class: "invalid-feedback" }
-app-1  |                                                 ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:176:43: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |         bb.use :hint, wrap_with: { class: "form-text" }
-app-1  |                                           ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:182:63: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :horizontal_collection, item_wrapper_class: "form-check", item_label_class: "form-check-label", class: "row mb-3" do |b|
-app-1  |                                                               ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:182:95: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :horizontal_collection, item_wrapper_class: "form-check", item_label_class: "form-check-label", class: "row mb-3" do |b|
-app-1  |                                                                                               ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:182:122: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :horizontal_collection, item_wrapper_class: "form-check", item_label_class: "form-check-label", class: "row mb-3" do |b|
-app-1  |                                                                                                                          ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:185:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :label, class: "col-sm-3 col-form-label pt-0"
-app-1  |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:186:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.wrapper :grid_wrapper, class: "col-sm-9" do |ba|
-app-1  |                                     ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:187:29: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                             ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:187:62: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                              ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:187:89: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                         ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:188:47: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :full_error, wrap_with: { class: "invalid-feedback d-block" }
-app-1  |                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:189:41: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :hint, wrap_with: { class: "form-text" }
-app-1  |                                         ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:194:70: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :horizontal_collection_inline, item_wrapper_class: "form-check form-check-inline", item_label_class: "form-check-label", class: "row mb-3" do |b|
-app-1  |                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:194:120: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :horizontal_collection_inline, item_wrapper_class: "form-check form-check-inline", item_label_class: "form-check-label", class: "row mb-3" do |b|
-app-1  |                                                                                                                        ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:194:147: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :horizontal_collection_inline, item_wrapper_class: "form-check form-check-inline", item_label_class: "form-check-label", class: "row mb-3" do |b|
-app-1  |                                                                                                                                                   ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:197:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :label, class: "col-sm-3 col-form-label pt-0"
-app-1  |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:198:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.wrapper :grid_wrapper, class: "col-sm-9" do |ba|
-app-1  |                                     ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:199:29: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                             ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:199:62: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                              ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:199:89: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                         ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:200:47: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :full_error, wrap_with: { class: "invalid-feedback d-block" }
-app-1  |                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:201:41: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :hint, wrap_with: { class: "form-text" }
-app-1  |                                         ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:206:44: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :horizontal_file, class: "row mb-3" do |b|
-app-1  |                                            ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:212:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :label, class: "col-sm-3 col-form-label"
-app-1  |                          ^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:213:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.wrapper :grid_wrapper, class: "col-sm-9" do |ba|
-app-1  |                                     ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:214:29: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-control", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                             ^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:214:58: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-control", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                          ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:214:85: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-control", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                     ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:215:47: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :full_error, wrap_with: { class: "invalid-feedback" }
-app-1  |                                               ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:216:41: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :hint, wrap_with: { class: "form-text" }
-app-1  |                                         ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:221:46: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :horizontal_select, class: "row mb-3" do |b|
-app-1  |                                              ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:224:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :label, class: "col-sm-3 col-form-label"
-app-1  |                          ^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:225:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.wrapper :grid_wrapper, class: "col-sm-9" do |ba|
-app-1  |                                     ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:226:29: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-select", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                             ^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:226:57: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-select", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                         ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:226:84: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-select", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                    ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:227:47: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :full_error, wrap_with: { class: "invalid-feedback" }
-app-1  |                                               ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:228:41: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :hint, wrap_with: { class: "form-text" }
-app-1  |                                         ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:233:52: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :horizontal_multi_select, class: "row mb-3" do |b|
-app-1  |                                                    ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:236:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :label, class: "col-sm-3 col-form-label"
-app-1  |                          ^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:237:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.wrapper :grid_wrapper, class: "col-sm-9" do |ba|
-app-1  |                                     ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:238:25: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.wrapper class: "d-flex flex-row justify-content-between align-items-center" do |bb|
-app-1  |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:239:31: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |         bb.use :input, class: "form-select mx-1", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                               ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:239:64: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |         bb.use :input, class: "form-select mx-1", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:239:91: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |         bb.use :input, class: "form-select mx-1", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                           ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:241:47: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :full_error, wrap_with: { class: "invalid-feedback d-block" }
-app-1  |                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:242:41: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :hint, wrap_with: { class: "form-text" }
-app-1  |                                         ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:247:45: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :horizontal_range, class: "row mb-3" do |b|
-app-1  |                                             ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:252:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :label, class: "col-sm-3 col-form-label pt-0"
-app-1  |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:253:37: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.wrapper :grid_wrapper, class: "col-sm-9" do |ba|
-app-1  |                                     ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:254:29: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-range", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                             ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:254:56: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-range", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                        ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:254:83: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :input, class: "form-range", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                   ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:255:47: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :full_error, wrap_with: { class: "invalid-feedback" }
-app-1  |                                               ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:256:41: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       ba.use :hint, wrap_with: { class: "form-text" }
-app-1  |                                         ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:260:1: C: [Correctable] Layout/EmptyLines: Extra blank line detected.
-app-1  | code/config/initializers/simple_form_bootstrap.rb:264:40: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :inline_form, class: "col-12" do |b|
-app-1  |                                        ^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:272:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :label, class: "visually-hidden"
-app-1  |                          ^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:274:26: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-control", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                          ^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:274:55: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-control", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                       ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:274:82: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :input, class: "form-control", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                  ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:275:39: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.use :error, wrap_with: { class: "invalid-feedback" }
-app-1  |                                       ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:276:43: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.optional :hint, wrap_with: { class: "form-text" }
-app-1  |                                           ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:280:43: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |   config.wrappers :inline_boolean, class: "col-12" do |b|
-app-1  |                                           ^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:283:43: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |     b.wrapper :form_check_wrapper, class: "form-check" do |bb|
-app-1  |                                           ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:284:29: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       bb.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                             ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:284:62: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       bb.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                              ^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:284:89: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       bb.use :input, class: "form-check-input", error_class: "is-invalid", valid_class: "is-valid"
-app-1  |                                                                                         ^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:285:29: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       bb.use :label, class: "form-check-label"
-app-1  |                             ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:286:42: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       bb.use :error, wrap_with: { class: "invalid-feedback" }
-app-1  |                                          ^^^^^^^^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:287:46: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
-app-1  |       bb.optional :hint, wrap_with: { class: "form-text" }
-app-1  |                                              ^^^^^^^^^^^
-app-1  | code/config/initializers/simple_form_bootstrap.rb:291:1: C: [Correctable] Layout/EmptyLines: Extra blank line detected.
+app-1  | code/config/puma.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+app-1  | threads_count = ENV.fetch('RAILS_MAX_THREADS', 3)
+app-1  | ^
+app-1  | code/config/puma.rb:4:27: C: [Correctable] Style/RedundantFetchBlock: Use fetch('PORT', 3000) instead of fetch('PORT') { 3000 }.
+app-1  | bind "tcp://0.0.0.0:#{ENV.fetch('PORT') { 3000 }}"
+app-1  |                           ^^^^^^^^^^^^^^^^^^^^^^
+app-1  | code/config/routes.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+app-1  | Rails.application.routes.draw do
+app-1  | ^
+app-1  | code/db/seeds.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+app-1  | code/db/seeds.rb:2:1: C: [Correctable] Layout/LeadingEmptyLines: Unnecessary blank line at the beginning of the source.
+app-1  | categories = [
+app-1  | ^^^^^^^^^^
+app-1  | code/db/seeds.rb:3:11: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+app-1  |   { name: "Кино" },
+app-1  |           ^^^^^^
+app-1  | code/db/seeds.rb:4:11: C: [Correctable] Style/StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+app-1  |   { name: "Спектакли" }
+app-1  |           ^^^^^^^^^^^
+app-1  | code/db/seeds.rb:12:15: C: [Correctable] Style/NumericLiterals: Use underscores(_) as thousands separator and separate every 3 digits with them.
+app-1  |     password: 123456,
+app-1  |               ^^^^^^
+app-1  | code/db/seeds.rb:14:4: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+app-1  |   } ].map do |u|
+app-1  |    ^
+app-1  | code/db/seeds.rb:14:5: C: [Correctable] Layout/MultilineArrayBraceLayout: The closing array brace must be on the line after the last array element when the opening brace is on a separate line from the first array element.
+app-1  |   } ].map do |u|
+app-1  |     ^
+app-1  | code/db/seeds.rb:41:1: C: [Correctable] Layout/MultilineMethodCallIndentation: Align .map with [ on line 18.
+app-1  | .map do |p|
+app-1  | ^^^^
+app-1  | code/db/seeds.rb:47:1: C: Naming/VariableNumber: Use normalcase for variable numbers.
+app-1  | comment_1 = PostComment.create({ parent: nil, content: 'level 1 comment 1', user: author, post: root_post })
+app-1  | ^^^^^^^^^
+app-1  | code/db/seeds.rb:48:1: C: Naming/VariableNumber: Use normalcase for variable numbers.
+app-1  | comment_2 = PostComment.create({ parent: comment_1, content: 'level 2 comment', user: author, post: root_post })
+app-1  | ^^^^^^^^^
+app-1  | code/db/seeds.rb:49:1: W: [Correctable] Lint/UselessAssignment: Useless assignment to variable - comment_4. Did you mean comment_3?
+app-1  | comment_4 = PostComment.create({ parent: comment_2, content: 'level 3 comment', user: author, post: root_post })
+app-1  | ^^^^^^^^^
+app-1  | code/db/seeds.rb:49:1: C: Naming/VariableNumber: Use normalcase for variable numbers.
+app-1  | comment_4 = PostComment.create({ parent: comment_2, content: 'level 3 comment', user: author, post: root_post })
+app-1  | ^^^^^^^^^
+app-1  | code/db/seeds.rb:50:1: W: [Correctable] Lint/UselessAssignment: Useless assignment to variable - comment_3. Did you mean comment_4?
+app-1  | comment_3 = PostComment.create({ parent: nil, content: 'level 1 comment 2', user: author, post: root_post })
+app-1  | ^^^^^^^^^
+app-1  | code/db/seeds.rb:50:1: C: Naming/VariableNumber: Use normalcase for variable numbers.
+app-1  | comment_3 = PostComment.create({ parent: nil, content: 'level 1 comment 2', user: author, post: root_post })
+app-1  | ^^^^^^^^^
+app-1  | code/test/application_system_test_case.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+app-1  | require 'test_helper'
+app-1  | ^
+app-1  | code/test/application_system_test_case.rb:4:63: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+app-1  |   driven_by :selenium, using: :headless_chrome, screen_size: [ 1400, 1400 ]
+app-1  |                                                               ^
+app-1  | code/test/application_system_test_case.rb:4:74: C: Layout/SpaceInsideArrayLiteralBrackets: Do not use space inside array brackets.
+app-1  |   driven_by :selenium, using: :headless_chrome, screen_size: [ 1400, 1400 ]
+app-1  |                                                                          ^
+app-1  | code/test/channels/application_cable/connection_test.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+app-1  | require 'test_helper'
+app-1  | ^
+app-1  | code/test/controllers/comments_controller_test.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+app-1  | require 'test_helper'
+app-1  | ^
+app-1  | code/test/controllers/likes_controller_test.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+app-1  | require 'test_helper'
+app-1  | ^
+app-1  | code/test/controllers/posts_controller_test.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+app-1  | require 'test_helper'
+app-1  | ^
+app-1  | code/test/controllers/user_controller_test.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+app-1  | require 'test_helper'
+app-1  | ^
+app-1  | code/test/models/category_test.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+app-1  | require 'test_helper'
+app-1  | ^
+app-1  | code/test/models/post_comment_test.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+app-1  | require 'test_helper'
+app-1  | ^
+app-1  | code/test/models/post_like_test.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+app-1  | require 'test_helper'
+app-1  | ^
+app-1  | code/test/models/post_test.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+app-1  | require 'test_helper'
+app-1  | ^
+app-1  | code/test/models/user_test.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
+app-1  | require 'test_helper'
+app-1  | ^
+app-1  | code/test/scenarios/comment_operations.rb:1:1: W: Lint/EmptyFile: Empty file detected.
+app-1  | code/test/scenarios/not_logged_scenarios.rb:7:12: C: [Correctable] Style/NumericPredicate: Use User.size.positive? instead of User.size>0.
+app-1  |     assert User.size>0
+app-1  |            ^^^^^^^^^^^
+app-1  | code/test/scenarios/not_logged_scenarios.rb:7:12: C: [Correctable] Style/ZeroLengthPredicate: Use !empty? instead of size > 0.
+app-1  |     assert User.size>0
+app-1  |            ^^^^^^^^^^^
+app-1  | code/test/scenarios/not_logged_scenarios.rb:7:21: C: [Correctable] Layout/SpaceAroundOperators: Surrounding space missing for operator >.
+app-1  |     assert User.size>0
+app-1  |                     ^
+app-1  | code/test/scenarios/not_logged_scenarios.rb:9:12: C: [Correctable] Style/NumericPredicate: Use Category.size.positive? instead of Category.size>0.
+app-1  |     assert Category.size>0
+app-1  |            ^^^^^^^^^^^^^^^
+app-1  | code/test/scenarios/not_logged_scenarios.rb:9:12: C: [Correctable] Style/ZeroLengthPredicate: Use !empty? instead of size > 0.
+app-1  |     assert Category.size>0
+app-1  |            ^^^^^^^^^^^^^^^
+app-1  | code/test/scenarios/not_logged_scenarios.rb:9:25: C: [Correctable] Layout/SpaceAroundOperators: Surrounding space missing for operator >.
+app-1  |     assert Category.size>0
+app-1  |                         ^
+app-1  | code/test/scenarios/not_logged_scenarios.rb:10:12: C: [Correctable] Style/NumericPredicate: Use Post.size.positive? instead of Post.size>0.
+app-1  |     assert Post.size>0
+app-1  |            ^^^^^^^^^^^
+app-1  | code/test/scenarios/not_logged_scenarios.rb:10:12: C: [Correctable] Style/ZeroLengthPredicate: Use !empty? instead of size > 0.
+app-1  |     assert Post.size>0
+app-1  |            ^^^^^^^^^^^
+app-1  | code/test/scenarios/not_logged_scenarios.rb:10:21: C: [Correctable] Layout/SpaceAroundOperators: Surrounding space missing for operator >.
+app-1  |     assert Post.size>0
+app-1  |                     ^
+app-1  | code/test/scenarios/not_logged_scenarios.rb:11:12: C: [Correctable] Style/NumericPredicate: Use PostComment.size.positive? instead of PostComment.size>0.
+app-1  |     assert PostComment.size>0
+app-1  |            ^^^^^^^^^^^^^^^^^^
+app-1  | code/test/scenarios/not_logged_scenarios.rb:11:12: C: [Correctable] Style/ZeroLengthPredicate: Use !empty? instead of size > 0.
+app-1  |     assert PostComment.size>0
+app-1  |            ^^^^^^^^^^^^^^^^^^
+app-1  | code/test/scenarios/not_logged_scenarios.rb:11:28: C: [Correctable] Layout/SpaceAroundOperators: Surrounding space missing for operator >.
+app-1  |     assert PostComment.size>0
+app-1  |                            ^
+app-1  | code/test/scenarios/not_logged_scenarios.rb:14:3: W: Lint/EmptyBlock: Empty block detected.
+app-1  |   test 'home page' do ...
+app-1  |   ^^^^^^^^^^^^^^^^^^^
+app-1  | code/test/scenarios/not_logged_scenarios.rb:17:3: W: Lint/EmptyBlock: Empty block detected.
+app-1  |   test 'posts listed' do ...
+app-1  |   ^^^^^^^^^^^^^^^^^^^^^^
+app-1  | code/test/scenarios/not_logged_scenarios.rb:20:3: W: Lint/EmptyBlock: Empty block detected.
+app-1  |   test 'login possible' do ...
+app-1  |   ^^^^^^^^^^^^^^^^^^^^^^^^
+app-1  | code/test/scenarios/not_logged_scenarios.rb:23:3: W: Lint/EmptyBlock: Empty block detected.
+app-1  |   test 'registration possible' do ...
+app-1  |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app-1  | code/test/scenarios/post_operations.rb:1:1: W: Lint/EmptyFile: Empty file detected.
+app-1  | code/test/scenarios/user_management.rb:1:1: W: Lint/EmptyFile: Empty file detected.
+app-1  | code/test/test_helper.rb:1:1: C: [Correctable] Style/FrozenStringLiteralComment: Missing frozen string literal comment.
