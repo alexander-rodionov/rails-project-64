@@ -1,15 +1,16 @@
 include ActionView::Helpers::DateHelper
 class PostsController < ApplicationController
+  before_action :authenticate_user!, except: %i[index show]
   before_action :get_current_post, only: %i[show]
 
   def get_current_post
     @post = Post.find(params.require(:id))
   rescue ActiveRecord::RecordNotFound
-    redirect_to posts_path, alert: t('post.not_found')
+    redirect_to posts_path, alert: t("post.not_found")
   end
 
   def index
-    @posts = Post.latest_last.all
+    @posts = Post.latest.all
   end
 
   def show
@@ -22,15 +23,17 @@ class PostsController < ApplicationController
 
   def post_params
     params_permited=params.require(:post).permit(%i[title body category_id])
+  end
 
   def create
     @post = Post.new(post_params)
-    @post.status = 'published'
+    @post.status = "published"
     @post.creator = current_user
     if @post.save
-      redirect_to posts_path(@post)
+      redirect_to posts_path(@post), success: t("messages.post_created")
     else
-      render :new
+      flash[:alert] = t("messages.post_create_failed")
+      render :new, status: 422, alert:
     end
   end
 
@@ -38,7 +41,7 @@ class PostsController < ApplicationController
     case parent
     when Post
       parent.post_comment.new
-    ehrn PostComment
+    when PostComment
       parent.children.new
     else
       raise Exception("Unknown parent type #{parent.class.name}. This can't happen")

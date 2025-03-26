@@ -31,10 +31,10 @@ gem "bootsnap", require: false
 
 gem "cssbundling-rails"
 gem "slim-rails"
-gem 'simple_form'
-gem 'ancestry'
-gem 'devise'
-gem 'devise-i18n'
+gem "simple_form"
+gem "ancestry"
+gem "devise"
+gem "devise-i18n"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -57,7 +57,7 @@ group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem "sqlite3", ">= 1.4"
 
-  gem 'byebug'
+  gem "byebug"
 end
 
 group :development do

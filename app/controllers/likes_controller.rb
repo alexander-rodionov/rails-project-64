@@ -1,4 +1,5 @@
 class LikesController < ApplicationController
+  before_action :authenticate_user!
   def toggle
     post_id = params.require(:post_id)
     post = Post.find(post_id)

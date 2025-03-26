@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Users::SessionsController < Devise::SessionsController
-  #before_action :configure_sign_in_params, only: [:create]
+  # before_action :configure_sign_in_params, only: [:create]
   respond_to :html, :json
 
   # GET /resource/sign_in
@@ -17,7 +17,7 @@ class Users::SessionsController < Devise::SessionsController
   def create
     super do |user|
       if request.format.json?
-        render json: { user: user.as_json(only: [:id, :email]) } and return
+        render json: { user: user.as_json(only: [ :id, :email ]) } and return
       else
         redirect_to root_path and return
       end

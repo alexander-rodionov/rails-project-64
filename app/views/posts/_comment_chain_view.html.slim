@@ -14,12 +14,13 @@
           span.me-3.text-muted.fs-6
             = l(c.created_at, format: '%e %B, %k:%M')
         .card-body
-          p.card-text
+          p.card-text.break-words
             = sanitize(c.content)
-        .card-footer
-          = link_to t("comment.reply"), "#", class: "text-decoration-underline text-lowercase", type: "button", 
-              data: { bs_toggle: "collapse", bs_target: "#collapse-target-#{c.id}" }, 
-              aria: { expanded: "false", controls: "collapse-target-#{c.id}" }
+        - if controller.user_signed_in?
+          .card-footer
+            = link_to t("post_comment.reply"), "#", class: "text-decoration-underline text-lowercase", type: "button", 
+                data: { bs_toggle: "collapse", bs_target: "#collapse-target-#{c.id}" }, 
+                aria: { expanded: "false", controls: "collapse-target-#{c.id}" }
         .m-1.mb-2
           = render 'comment_chain_view', post: post, parent: c
     

@@ -5,7 +5,7 @@ container.d-flex.flex-column.m-0
       li.breadcrumb-item.active = post.category.name 
   h1.mb-4.mb-lg-5 
     = sanitize(post.title)
-  p 
+  p.break-words
     = simple_format(post.body, {}, wrapper_tag: "span", sanitize: true)
   .d-flex.flex-row.justify-content-between.bg-light.border-top.border-bottom.m-0.p-2
     .d-flex.flex-row

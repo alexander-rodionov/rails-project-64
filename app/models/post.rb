@@ -9,8 +9,8 @@ class Post < ApplicationRecord
   validates :body, length: { minimum: 200, maximum: 4000 }
 
 
-  scope :latest_last, -> order(created_at: :desc)
-  
+  scope :latest, -> { order(created_at: :desc) }
+
   def likes_count
     post_like.size
   end
@@ -26,5 +26,4 @@ class Post < ApplicationRecord
   def get_comments
     self.post_comment.root_comments.order(created_at: :desc)
   end
-
 end

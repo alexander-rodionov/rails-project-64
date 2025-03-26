@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: { sessions: 'users/sessions' }
+  devise_for :users, controllers: { sessions: "users/sessions" }
 
   root "posts#index"
 
-  #resources :users, only: %i[new create]
+  # resources :users, only: %i[new create]
   resource :user, only: %i[login logout] do
     get :login, to: "user#login"
     get :logout, to: "user#logout"

@@ -1,6 +1,4 @@
-.container.my-2.p-2
-  /  = debug comment
-  /  = debug comment.parent&.id
+.container.my-0.p-2
   = simple_form_for comment, url: post_comments_path(post) do |f|
     = f.hidden_field :parent_id, value: comment.parent&.id
     = f.input :content, label: false

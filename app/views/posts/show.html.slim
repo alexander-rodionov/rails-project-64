@@ -1,5 +1,8 @@
 .container.m-0.p-0
   = render 'post_show', post: @post
   .container.m-0.p-0.lead
-    = render 'comment_form', post:@post, comment: controller.new_comment(@post)
+    p.ms-2.mb-0
+      = t('post.comments_title')
+    - if controller.user_signed_in?
+      = render 'comment_form', post:@post, comment: controller.new_comment(@post)
     = render 'comment_chain_view', parent: @post, post: @post

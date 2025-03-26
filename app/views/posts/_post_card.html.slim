@@ -2,7 +2,7 @@
   .d-flex.flex-column.p-2
     h2.h5
       =link_to sanitize(post.title), post_path(post), class: "link-dark text-decoration-none"
-    p 
+    p.break-words
       = simple_format(post.body, {}, wrapper_tag: "span", sanitize: true)
     .d-flex.flex-row.align-items-center
       .d-flex.flex-row.align-items-center.me-5
