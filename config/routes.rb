@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   resources :posts, only: %i[index show new create] do
     resources :comments, only: %i[create]
-    resource :like, only: %i[toggle] do
+    resource :like, only: %i[] do
       post :toggle, to: "likes#toggle"
     end
   end
