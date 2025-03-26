@@ -40,7 +40,7 @@ class PostsController < ApplicationController
   def new_comment(parent)
     case parent
     when Post
-      parent.post_comment.new
+      parent.post_comments.new
     when PostComment
       parent.children.new
     else
