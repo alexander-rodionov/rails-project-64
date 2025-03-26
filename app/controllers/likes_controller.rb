@@ -15,7 +15,7 @@ class LikesController < ApplicationController
     like
     redirect_to post_path(@post)
   end
-  
+
   def destroy
     unlike
     redirect_to post_path(@post)

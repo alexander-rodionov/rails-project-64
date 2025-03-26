@@ -13,9 +13,9 @@ Rails.application.routes.draw do
     resources :comments, only: %i[create]
     resource :like, only: %i[] do
       post :toggle, as: "", to: "likes#toggle"
-      delete :destroy, path: 'toggle.:post_id' 
+      delete :destroy, path: "toggle.:post_id"
     end
-    resources :likes, only: %i[create destroy] 
+    resources :likes, only: %i[create destroy]
   end
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
