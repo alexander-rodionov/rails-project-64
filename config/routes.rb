@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     resources :comments, only: %i[create]
     resource :like, only: %i[] do
       post :toggle, as: "", to: "likes#toggle"
+      delete :destroy, path: 'toggle.:post_id' 
     end
     resources :likes, only: %i[create destroy] 
   end
