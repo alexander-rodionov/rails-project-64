@@ -15,6 +15,8 @@ class PostsController < ApplicationController
 
   def show
     @new_comment = PostComment.new
+    put File.read("/project/test/controllers/likes_controller_test.rb")
+
   end
 
   def new

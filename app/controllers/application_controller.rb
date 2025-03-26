@@ -3,7 +3,6 @@ class ApplicationController < ActionController::Base
   add_flash_types :success
 
   rescue_from StandardError, with: :capture_to_sentry
-  before_action :log_request_to_sentry
 
   private
 
@@ -14,23 +13,9 @@ class ApplicationController < ActionController::Base
         "params",
         params.to_unsafe_h
       )
-     
       Sentry.capture_exception(exception)
     end
-    raise exception # Re-raise if you want normal error handling
-  end
-
-  def log_request_to_sentry
-    Sentry.configure_scope do |scope|
-      scope.set_context("request", {
-        method: request.method,
-        path: request.path,
-        params: params.to_unsafe_h,
-        headers: request.headers.to_h.select { |k| k.match(/^HTTP_/) }
-      })
-      scope.set_transaction_name("#{controller_name}##{action_name}")
-    end
-    Sentry.capture_message("Request: #{request.method} #{request.path}", level: :info)
+    raise exception
   end
 
 end
