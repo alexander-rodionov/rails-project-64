@@ -74,4 +74,5 @@ group :test do
   gem 'faker'
   gem 'minitest-power_assert'
   gem 'selenium-webdriver'
+  gem 'slim_lint'
 end
