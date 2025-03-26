@@ -58,6 +58,7 @@ group :development, :test do
   gem "sqlite3", ">= 1.4"
 
   gem "byebug"
+  gem "brakeman"
 end
 
 group :development do
