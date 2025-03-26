@@ -7,7 +7,7 @@ class Post < ApplicationRecord
   has_many :post_comments
   has_many :post_likes
   alias likes post_likes
-  alias comments post_comments
+  #alias_method :comments, :ordered_post_comments
   validates :title, length: { minimum: 5, maximum: 255 }
   validates :body, length: { minimum: 200, maximum: 4000 }
 
@@ -25,7 +25,7 @@ class Post < ApplicationRecord
     creator&.email
   end
 
-  def post_comments
+  def comments
     post_comments.root_comments.order(created_at: :desc)
   end
 end
