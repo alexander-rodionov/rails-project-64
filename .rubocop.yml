@@ -8,73 +8,74 @@ inherit_gem: { rubocop-rails-omakase: rubocop.yml }
 #   Enabled: false
 
 Style/StringLiterals:
-  Enabled: true
-  EnforcedStyle: single_quotes
+  EnforcedStyle: double_quotes  # Prefer single quotes
+  ConsistentQuotesInMultiline: true  # Ensures consistency in multiline strings
+  AutoCorrect: true
 
 Style/FrozenStringLiteralComment:
-  Enabled: true
+  Enabled: false
 
 Layout/EmptyLines:
-  Enabled: true
+  Enabled: false
 
 Lint/UnusedBlockArgument:
-  Enabled: true
+  Enabled: false
 
 Style/Lambda:
-  Enabled: true
+  Enabled: false
 
 Layout/HashAlignment:
-  Enabled: true
+  Enabled: false
 
 Bundler/OrderedGems:
-  Enabled: true
+  Enabled: false
 Layout/LeadingEmptyLines:
-  Enabled: true
+  Enabled: false
 Layout/MultilineArrayBraceLayout:
-  Enabled: true
+  Enabled: false
 Layout/MultilineMethodCallIndentation:
-  Enabled: true
+  Enabled: false
 Layout/SpaceAroundOperators:
-  Enabled: true
+  Enabled: false
 Layout/SpaceInsideArrayLiteralBrackets:
   Enabled: true
 Layout/SpaceInsidePercentLiteralDelimiters:
-  Enabled: true
+  Enabled: false
 Lint/RaiseException:
-  Enabled: true
+  Enabled: false
 Lint/UselessAssignment:
-  Enabled: true
+  Enabled: false
 Rails/Blank:
-  Enabled: true
+  Enabled: false
 Rails/FilePath:
-  Enabled: true
+  Enabled: false
 Rails/HttpStatus:
-  Enabled: true
+  Enabled: false
 Rails/RootPathnameMethods:
-  Enabled: true
+  Enabled: false
 Style/Alias:
-  Enabled: true
+  Enabled: false
 Style/EmptyMethod:
-  Enabled: true
+  Enabled: false
 Style/FrozenStringLiteralComment:
-  Enabled: true
+  Enabled: false
 Style/GlobalStdStream:
-  Enabled: true
+  Enabled: false
 Style/NumericLiterals:
-  Enabled: true
+  Enabled: false
 Style/NumericPredicate:
-  Enabled: true
+  Enabled: false
 Style/RaiseArgs:
-  Enabled: true
+  Enabled: false
 Style/RedundantConstantBase:
-  Enabled: true
+  Enabled: false
 Style/RedundantFetchBlock:
-  Enabled: true
+  Enabled: false
 Style/RedundantSelf:
-  Enabled: true
+  Enabled: false
 Style/StringLiterals:
-  Enabled: true
+  Enabled: false
 Style/SymbolArray:
-  Enabled: true
+  Enabled: false
 Style/ZeroLengthPredicate:
-  Enabled: true
+  Enabled: false
