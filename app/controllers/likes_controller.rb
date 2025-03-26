@@ -10,4 +10,12 @@ class LikesController < ApplicationController
     end
     redirect_to post_path(post_id)
   end
+
+  def create
+    pp params
+  end
+  
+  def destroy
+    pp params
+  end
 end
