@@ -22,8 +22,6 @@ class PostsController < ApplicationController
 
   def post_params
     params_permited=params.require(:post).permit(%i[title body category_id])
-  end
-
 
   def create
     @post = Post.new(post_params)

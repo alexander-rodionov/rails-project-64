@@ -11,8 +11,8 @@ ru:
     labels:
       post:
         title: 'Заголовок'
-        body: 'Текст поста'
-        category_id: 'Категория'
+        body: 'Содержание'
+        category: 'Категория'
     # Примеры
     # labels:
     #   defaults:

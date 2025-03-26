@@ -14,3 +14,10 @@ ru:
     not_found: Пост не найден
   post_comment:
     create: Оставить комментарий
+  register:
+    success_message: "Добро пожаловать! Вы успешно зарегистрировались."
+  messages:
+    comment_created: Комментарий опубликован
+    post_created: Пост опубликован
+    post_create_failed: "Не удалось создать пост. Проверьте введенные данные"
+    
