@@ -3,7 +3,6 @@
 class MonitorController < ApplicationController
   def exception_check
     raise StandardError, 'Test exception'
-    redirect_to '/'
   end
 
   def sentry_check

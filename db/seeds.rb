@@ -46,7 +46,7 @@ end
 
 root_post = posts[1]
 author = users[0]
-comment_1 = PostComment.create({ parent: nil, content: 'level 1 comment 1', user: author, post: root_post })
-comment_2 = PostComment.create({ parent: comment_1, content: 'level 2 comment', user: author, post: root_post })
-PostComment.create({ parent: comment_2, content: 'level 3 comment', user: author, post: root_post })
+comment1 = PostComment.create({ parent: nil, content: 'level 1 comment 1', user: author, post: root_post })
+comment2 = PostComment.create({ parent: comment1, content: 'level 2 comment', user: author, post: root_post })
+PostComment.create({ parent: comment2, content: 'level 3 comment', user: author, post: root_post })
 PostComment.create({ parent: nil, content: 'level 1 comment 2', user: author, post: root_post })

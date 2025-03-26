@@ -16,10 +16,8 @@ class Users::SessionsController < Devise::SessionsController
 
   def create
     super do |user|
-      if request.format.json?
-        render json: { user: user.as_json(only: %i[id email]) } and return
-      else
-        redirect_to root_path and return
+      render json: { user: user.as_json(only: %i[id email]) } and return if request.format.json?
+      redirect_to root_path and return
       end
     end
   end

@@ -85,5 +85,5 @@ Rails.application.configure do
   config.action_controller.forgery_protection_origin_check = false
   config.action_controller.default_url_options = { host: ENV['CODESPACE_NAME'] ? "#{ENV['CODESPACE_NAME']}-3000.app.github.dev" : 'localhost:3000' }
   config.force_ssl = false
-  config.web_console.whitelisted_ips = [ '0.0.0.0/0', '::/0' ]
+  config.web_console.whitelisted_ips = ['0.0.0.0/0', '::/0']
 end

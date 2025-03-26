@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-include ActionView::Helpers::DateHelper
 class PostsController < ApplicationController
+  include ActionView::Helpers::DateHelper
   before_action :authenticate_user!, except: %i[index show]
   before_action :parse_current_post, only: %i[show]
 
