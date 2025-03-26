@@ -1,25 +1,26 @@
 # frozen_string_literal: true
 
-require "test_helper"
+require 'test_helper'
 
 class UserControllerTest < ActionDispatch::IntegrationTest
-  # test "should get new" do
-  #   get user_new_url
-  #   assert_response :success
-  # end
+  test 'should sign_up' do
+    get user_new_url
+    assert_response :success
+  end
 
-  # test "should get create" do
-  #   get user_create_url
-  #   assert_response :success
-  # end
+  test 'should register' do
+    get user_new_url
+    assert_response :success
+  end
 
-  # test "should get login" do
-  #   get user_login_url
-  #   assert_response :success
-  # end
 
-  # test "should get logout" do
-  #   get user_logout_url
-  #   assert_response :success
-  # end
+  test 'should sign_in' do
+    get user_login_url
+    assert_response :success
+  end
+
+  test 'should sign_out' do
+    get user_logout_url
+    assert_response :success
+  end
 end

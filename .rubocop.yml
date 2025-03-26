@@ -8,8 +8,8 @@ inherit_gem: { rubocop-rails-omakase: rubocop.yml }
 #   Enabled: false
 
 Style/StringLiterals:
-  EnforcedStyle: double_quotes  # Prefer single quotes
-  ConsistentQuotesInMultiline: true  # Ensures consistency in multiline strings
+  EnforcedStyle: single_quotes
+  ConsistentQuotesInMultiline: true
   AutoCorrect: true
 
 Style/FrozenStringLiteralComment:
@@ -72,8 +72,6 @@ Style/RedundantConstantBase:
 Style/RedundantFetchBlock:
   Enabled: false
 Style/RedundantSelf:
-  Enabled: false
-Style/StringLiterals:
   Enabled: false
 Style/SymbolArray:
   Enabled: false

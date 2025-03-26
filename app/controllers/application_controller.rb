@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
     Sentry.with_scope do |scope|
       # Add request params (filter sensitive data first)
       scope.set_context(
-        "params",
+        'params',
         params.to_unsafe_h
       )
       Sentry.capture_exception(exception)

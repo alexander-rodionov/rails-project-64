@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
       end.join('\n')
       redirect_to post_path(post.id), id: post.id, alert: error_text
     else
-      redirect_to post_path(post.id), success: t("messages.comment_created")
+      redirect_to post_path(post.id), success: t('messages.comment_created')
     end
   end
 end

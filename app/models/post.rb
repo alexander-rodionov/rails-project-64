@@ -2,7 +2,7 @@
 
 class Post < ApplicationRecord
   belongs_to :category
-  belongs_to :creator, class_name: "User"
+  belongs_to :creator, class_name: 'User'
   has_many :post_comments
   has_many :post_likes
   alias likes post_likes
