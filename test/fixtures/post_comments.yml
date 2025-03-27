@@ -1,11 +1,20 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  parent: 
-  user: one
-  content: MyText
+# one:
+#   parent: post
+#   user: one
+#   post: one
+#   content: <%= Faker::Books::Lovecraft.sentence =>
 
-two:
-  parent_id: MyString
-  user: two
-  content: MyText
+# two:
+#   parent_id: MyString
+#   user: two
+#   post: one
+#   content: <%= Faker::Books::Lovecraft.sentence =>
+
+# three:
+#   parent_id: MyString
+#   user: two
+#   post: one
+#   content: <%= Faker::Books::Lovecraft.sentence =>
+

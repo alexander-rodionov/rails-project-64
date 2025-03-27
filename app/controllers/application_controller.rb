@@ -6,6 +6,10 @@ class ApplicationController < ActionController::Base
 
   rescue_from StandardError, with: :capture_to_sentry
 
+  def render_unauthorized
+    render file: 'public/401.html', status: :unauthorized
+  end
+
   private
 
   def capture_to_sentry(exception)

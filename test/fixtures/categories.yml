@@ -1,5 +1,5 @@
-one:
-  name: NewCategory1
+category_one:
+  name: <%= Faker::Books::Lovecraft.word.capitalize =>
 
-two:
-  name: NewCategory2
+category_two:
+  name: <%= Faker::Books::Lovecraft.word.capitalize =>

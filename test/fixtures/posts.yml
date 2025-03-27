@@ -1,15 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyStringMyStringMyStringMyStringMyStringMyString
-  category: one
-  body: MyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyTextMyText
-  user: one
+post_one:
+  title: "Loathsome gibbering hideous fungus abnormal shunned gibbous iridescence comprehension."
+  category: :category_one
+  body: "Gambrel decadent ululate. Gibbering comprehension lurk daemoniac nameless ululate effulgence. Swarthy spectral gibbous decadent effulgence unutterable singular. Swarthy hideous stygian cat nameless. Accursed non-euclidean fainted."
+  creator: :user_two
   status: 'published'
 
-two:
-  title: woieurowieurwoieurowieurwoieurowieurwoieurowieurwoieurowieurwoieurowieur
-  category: two
-  body: sljkdfhlaskdjhfakljshdfsljkdfhlaskdjhfakljshdfsljkdfhlaskdjhfakljshdfsljkdfhlaskdjhfakljshdfsljkdfhlaskdjhfakljshdfsljkdfhlaskdjhfakljshdfsljkdfhlaskdjhfakljshdfsljkdfhlaskdjhfakljshdf
-  user: two
+post_two:
+  title: "Squamous fainted cyclopean fungus unmentionable furtive antiquarian."
+  category: :category_two
+  body: "Immemorial indescribable fainted singular antiquarian squamous hideous. Eldritch gibbous fungus. Tentacles dank comprehension non-euclidean. Antediluvian madness loathsome dank hideous. Unnamable furtive amorphous antiquarian."
+  creator: :user_one
   status: 'published'

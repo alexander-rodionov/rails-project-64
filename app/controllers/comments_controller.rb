@@ -3,6 +3,8 @@
 class CommentsController < ApplicationController
   before_action :authenticate_user!
   def create
+    return render_unauthorized unless user_signed_in?
+
     values = params.require(:post_comment).permit(:parent_id, :content)
     post = Post.find(params.require(:post_id))
     parent = values[:parent_id].blank? ? nil : PostComment.find(values[:parent_id])

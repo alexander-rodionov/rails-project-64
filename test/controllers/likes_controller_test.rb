@@ -3,13 +3,57 @@
 require 'test_helper'
 
 class LikesControllerTest < ActionDispatch::IntegrationTest
-  # test "should get create" do
-  #   get likes_create_url
-  #   assert_response :success
-  # end
+  include Devise::Test::IntegrationHelpers
+  fixtures :users, :categories, :posts, :post_likes
+  setup do
+    @user = users(:user_one)
+  end
 
-  # test "should get destroy" do
-  #   get likes_destroy_url
-  #   assert_response :success
-  # end
+  test 'should like create' do
+    @post = posts(:post_one)
+    sign_in(@user)
+    @post.post_likes.destroy_all
+    post post_like_path(@post)
+    assert_response :redirect
+    assert { PostLike.exists?(post: @post, user: @user) }
+  end
+
+  test 'should like destroy' do
+    @post = posts(:post_two)
+    sign_in(@user)
+    delete post_like_path(@post)
+    assert_response :redirect
+    assert { !PostLike.exists?(post: @post, user: @user) }
+  end
+
+  test 'should like toggle' do
+    @post = posts(:post_one)
+    sign_in(@user)
+    @post.post_likes.delete_all
+    post toggle_post_like_path(@post)
+    assert_response :redirect
+    assert { PostLike.exists?(post: @post, user: @user) }
+    post toggle_post_like_path(@post)
+    assert_response :redirect
+    assert { !PostLike.exists?(post: @post, user: @user) }
+  end
+
+  test 'should like create unsigned' do
+    @post = posts(:post_one)
+    @post.post_likes.delete_all
+    post post_like_path(@post)
+    assert_redirected_to new_user_session_path
+  end
+
+  test 'should like destroy unsigned' do
+    @post = posts(:post_two)
+    delete post_like_path(@post)
+    assert_redirected_to new_user_session_path
+  end
+
+  test 'should like toggle unsigned' do
+    @post = posts(:post_one)
+    post toggle_post_like_path(@post)
+    assert_redirected_to new_user_session_path
+  end
 end
