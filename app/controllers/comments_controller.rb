@@ -11,7 +11,7 @@ class CommentsController < ApplicationController
     @comment = PostComment.create(parent: parent, post: post, user: current_user, content: values[:content])
     if @comment.new_record?
       error_text = @comment.errors.map do |v|
-        p "#{PostComment.human_attribute_name(v.attribute)} #{@comment.errors[v.attribute.to_sym].join(', ')}"
+        "#{PostComment.human_attribute_name(v.attribute)} #{@comment.errors[v.attribute.to_sym].join(', ')}"
       end.join('\n')
       redirect_to post_path(post.id), id: post.id, alert: error_text
     else

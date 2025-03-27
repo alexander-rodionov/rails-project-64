@@ -22,7 +22,6 @@ class ApplicationController < ActionController::Base
 
   def capture_to_sentry(exception)
     Sentry.with_scope do |scope|
-      # Add request params (filter sensitive data first)
       scope.set_context(
         'params',
         params.to_unsafe_h

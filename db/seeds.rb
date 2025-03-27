@@ -4,7 +4,7 @@ categories = [
   { name: 'Кино' },
   { name: 'Спектакли' }
 ].map do |i|
-  Category.create(i)
+  Category.create!(i)
 end
 
 users = [
@@ -14,7 +14,7 @@ users = [
     encrypted_password: User.new.send(:password_digest, '123456')
   }
 ].map do |u|
-  User.create(u)
+  User.create!(u)
 end
 
 posts = [
@@ -41,12 +41,12 @@ posts = [
   }
 ]
         .map do |p|
-  Post.create(p)
+  Post.create!(p)
 end
 
 root_post = posts[1]
 author = users[0]
-comment1 = PostComment.create({ parent: nil, content: 'level 1 comment 1', user: author, post: root_post })
-comment2 = PostComment.create({ parent: comment1, content: 'level 2 comment', user: author, post: root_post })
-PostComment.create({ parent: comment2, content: 'level 3 comment', user: author, post: root_post })
-PostComment.create({ parent: nil, content: 'level 1 comment 2', user: author, post: root_post })
+comment1 = PostComment.create!({ parent: nil, content: 'level 1 comment 1', user: author, post: root_post })
+comment2 = PostComment.create!({ parent: comment1, content: 'level 2 comment', user: author, post: root_post })
+PostComment.create!({ parent: comment2, content: 'level 3 comment', user: author, post: root_post })
+PostComment.create!({ parent: nil, content: 'level 1 comment 2', user: author, post: root_post })
