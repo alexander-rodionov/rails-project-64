@@ -10,6 +10,7 @@ class LikesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should like create' do
+    # this comment is to overcome git actions failure
     @post = posts(:post_one)
     sign_in(@user)
     @post.post_likes.destroy_all
