@@ -17,15 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # Get complete history instead of just latest commit
-
-      - name: Verify latest code
-        run: |
-          git fetch --all
-          git reset --hard origin/$GITHUB_REF_NAME
-          git clean -fd
-          echo "Current HEAD: $(git rev-parse HEAD)"
 
       - name: Hexlet project check
         uses: hexlet/project-action@release
