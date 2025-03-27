@@ -81,3 +81,16 @@ Layout/SpaceInsideArrayLiteralBrackets:
   EnforcedStyle: no_space
 Layout/TrailingWhitespace:
   Enabled: true
+
+Style/OptionalBooleanParameter:
+  Enabled: true
+Layout/EmptyLineAfterGuardClause:
+  Enabled: true
+Layout/EmptyLinesAroundExceptionHandlingKeywords:
+  Enabled: true
+Layout/RescueEnsureAlignment:
+  Enabled: true
+Lint/AmbiguousRegexpLiteral:
+  Enabled: true
+Layout/FirstHashElementIndentation:
+  Enabled: true

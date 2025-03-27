@@ -16,8 +16,7 @@ class CommentsControllerTest < ActionDispatch::IntegrationTest
 
     get rails_exception_path
     assert_response :internal_server_error
-
-    ensure
+  ensure
       Rails.application.env_config['action_dispatch.show_exceptions'] = original_show_exceptions
       Rails.application.env_config['action_dispatch.show_detailed_exceptions'] = original_show_details
   end

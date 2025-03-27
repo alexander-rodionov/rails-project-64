@@ -35,11 +35,11 @@ class LikesController < ApplicationController
     @post.post_likes.exists?(user: current_user)
   end
 
-  def like(skip_check = false)
+  def like(skip_check: false)
     @post.post_likes.create(post: @post, user: current_user) if skip_check || !liked?
   end
 
-  def unlike(skip_check = false)
+  def unlike(skip_check: false)
     @post.post_likes.find_by(user: current_user).destroy if skip_check || liked?
   end
 end

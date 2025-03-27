@@ -15,7 +15,7 @@ class UserControllerTest < ActionDispatch::IntegrationTest
     assert_match 'Пароль', response.body
     assert_match '(минимум символов: 6)', response.body
     assert_match 'Подтверждение пароля', response.body
-    assert_match /input.*submit.*Регистрация/, response.body
+    assert_match(/input.*submit.*Регистрация/, response.body)
   end
 
   # Отправка формы регистрации - happy path
@@ -34,28 +34,28 @@ class UserControllerTest < ActionDispatch::IntegrationTest
 
   test 'should register form process fail 1' do
     post user_registration_path, params: { user: {
-        email: 'zzzzzzz',
-        password: '123456',
-        password_confirmation: '123456'
-      } }
+      email: 'zzzzzzz',
+      password: '123456',
+      password_confirmation: '123456'
+    } }
     assert_response :unprocessable_content
   end
 
   test 'should register form process fail 2' do
     post user_registration_path, params: { user: {
-        email: 'zzz@zz.zz',
-        password: '123456',
-        password_confirmation: '654321'
-      } }
+      email: 'zzz@zz.zz',
+      password: '123456',
+      password_confirmation: '654321'
+    } }
     assert_response :unprocessable_content
   end
 
   test 'should register form process fail 3' do
     post user_registration_path, params: { user: {
-        email: 'zzz@zz.zz',
-        password: '123',
-        password_confirmation: '123'
-      } }
+      email: 'zzz@zz.zz',
+      password: '123',
+      password_confirmation: '123'
+    } }
     assert_response :unprocessable_content
   end
 
