@@ -8,7 +8,7 @@ class LikesControllerTest < ActionDispatch::IntegrationTest
   setup do
     @user = users(:user_one)
   end
-  
+
   test 'should like create' do
     @post = posts(:post_one)
     sign_in(@user)
