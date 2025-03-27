@@ -48,19 +48,24 @@ group :production do
 end
 
 group :development, :test do
+  gem 'byebug'
+
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri windows], require: 'debug/prelude'
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem 'brakeman', require: false
 
+  gem 'faker'
+
+  gem 'minitest-power_assert'
+
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem 'rubocop-rails-omakase', require: false
 
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3', '>= 1.4'
+  gem 'slim_lint'
 
-  gem 'byebug'
+  gem 'sqlite3', '>= 1.4'
 end
 
 group :development do
@@ -71,8 +76,7 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
-  gem 'faker'
-  gem 'minitest-power_assert'
   gem 'selenium-webdriver'
-  gem 'slim_lint'
 end
+
+gem 'rubocop-slim', '~> 0.2.8'

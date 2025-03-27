@@ -1,8 +1,9 @@
-=simple_form_for(@post, url: posts_path, html: { data: { turbolinks: false } }) do |f|
+=simple_form_for(@post, url: posts_path,
+        html: { data: { turbolinks: false } }) do |f|
     = f.input :title
     /= f.full_error :title
     = f.input :body
     /= f.full_error :body
-    = f.association  :category
+    = f.association :category
     /= f.full_error :category
-    = f.submit class: "btn btn-primary", value:t('post.create')
+    = f.submit class: 'btn btn-primary', value: t('post.create')

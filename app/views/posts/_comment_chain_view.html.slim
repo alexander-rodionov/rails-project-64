@@ -1,13 +1,13 @@
 - new_comment = controller.new_comment(parent)
-.container 
+.container
   - unless parent.is_a? Post
     .container id="collapse-target-#{parent.id}" class="collapse"
-      = render 'comment_form', comment: new_comment, post:@post
+      = render 'comment_form', comment: new_comment, post: @post
   - parent.comments.each do |c|
     - unless c.new_record?
       .card.rounded-0.m-1
         .card-header.d-flex.flex-row.align-items-center
-          span.me-3 
+          span.me-3
             = link_to '#', post_path(post)
           span.me-3
             = c.user.email
@@ -18,9 +18,12 @@
             = sanitize(c.content)
         - if controller.user_signed_in?
           .card-footer
-            = link_to t("post_comment.reply"), "#", class: "text-decoration-underline text-lowercase", type: "button", 
-                data: { bs_toggle: "collapse", bs_target: "#collapse-target-#{c.id}" }, 
-                aria: { expanded: "false", controls: "collapse-target-#{c.id}" }
+            = link_to t('post_comment.reply'), '#',
+                class: 'text-decoration-underline text-lowercase',
+                type: 'button',
+                data: { bs_toggle: 'collapse',
+                    bs_target: "#collapse-target-#{c.id}" },
+                aria: { expanded: 'false',
+                    controls: "collapse-target-#{c.id}" }
         .m-1.mb-2
           = render 'comment_chain_view', post: post, parent: c
-    

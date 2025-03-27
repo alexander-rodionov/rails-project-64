@@ -2,5 +2,5 @@
   = simple_form_for comment, url: post_comments_path(post) do |f|
     = f.hidden_field :parent_id, value: comment.parent&.id
     = f.input :content, label: false
-    = f.submit class: "btn btn-primary", value:t('post_comment.create')
-
+    = f.submit class: 'btn btn-primary',
+        value: t('post_comment.create')

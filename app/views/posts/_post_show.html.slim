@@ -2,11 +2,11 @@ container.d-flex.flex-column.m-0
   .container.p-0.my-2
     ol.breadcrumb
       li.breadcrumb-item = link_to t('posts.all_posts'), posts_path
-      li.breadcrumb-item.active = post.category.name 
+      li.breadcrumb-item.active = post.category.name
   h1.mb-4.mb-lg-5.break-words
     = sanitize(post.title)
   p.break-words
-    = simple_format(post.body, {}, wrapper_tag: "span", sanitize: true)
+    = simple_format(post.body, {}, wrapper_tag: 'span', sanitize: true)
   .d-flex.flex-row.justify-content-between.bg-light.border-top.border-bottom.m-0.p-2
     .d-flex.flex-row
       .p.me-5
@@ -17,6 +17,5 @@ container.d-flex.flex-column.m-0
       .me-2
         = post.likes_count
       .m-0
-        =link_to post_like_path(post), method: :post, data: { turbo_method: :post}, class:"link-dark" do
-          i.bi class="#{controller.liked_by_current_user? ? "bi-hand-thumbs-up-fill" : "bi-hand-thumbs-up" }"
-          
+        =link_to post_like_path(post), method: :post, data: { turbo_method: :post }, class: 'link-dark' do
+          i.bi class="#{controller.liked_by_current_user? ? 'bi-hand-thumbs-up-fill' : 'bi-hand-thumbs-up' }"

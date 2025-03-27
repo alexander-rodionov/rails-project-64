@@ -4,5 +4,6 @@
     p.ms-2.mb-0
       = t('post.comments_title')
     - if controller.user_signed_in?
-      = render 'comment_form', post:@post, comment: controller.new_comment(@post)
+      = render 'comment_form', post: @post,
+          comment: controller.new_comment(@post)
     = render 'comment_chain_view', parent: @post, post: @post

@@ -1,11 +1,10 @@
 == content_for :title do
   = t('posts.title')
 
-
 h1 #{t('posts.title')}
 .d-flex.flex-column
   - if @posts.empty?
     = p t('posts.empty')
-  - else 
+  - else
     - @posts.each do |p|
       = render 'post_card', post: p

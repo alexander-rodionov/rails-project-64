@@ -1,13 +1,14 @@
 .container.border.rounded
   .d-flex.flex-column.p-2
     h2.h5
-      =link_to sanitize(post.title), post_path(post), class: "link-dark text-decoration-none"
+      =link_to sanitize(post.title), post_path(post),
+        class: 'link-dark text-decoration-none'
     p.break-words
-      = simple_format(post.body, {}, wrapper_tag: "span", sanitize: true)
+      = simple_format(post.body, {}, wrapper_tag: 'span', sanitize: true)
     .d-flex.flex-row.align-items-center
       .d-flex.flex-row.align-items-center.me-5
         .p.small.text-muted.me-1
-          = t('post.liked') 
+          = t('post.liked')
         .badge.rounded-pill.text-bg-secondary
           = post.likes_count
       .p.small.text-muted.me-5
