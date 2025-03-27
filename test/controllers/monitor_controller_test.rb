@@ -18,7 +18,7 @@ class CommentsControllerTest < ActionDispatch::IntegrationTest
     assert_response :internal_server_error
   ensure
     Rails.application.env_config['action_dispatch.show_exceptions'] = original_show_exceptions
-      Rails.application.env_config['action_dispatch.show_detailed_exceptions'] = original_show_details
+    Rails.application.env_config['action_dispatch.show_detailed_exceptions'] = original_show_details
   end
 
   test 'should respond to sentry_check monitor' do
