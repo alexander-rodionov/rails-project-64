@@ -49,9 +49,9 @@ class PostsController < ApplicationController
 
   private
 
-  def post_params
-    params.require(:post).permit(%i[title body category_id])
-  end
+    def post_params
+      params.require(:post).permit(%i[title body category_id])
+    end
 
   def parse_current_post
     @post = Post.find(params.require(:id))

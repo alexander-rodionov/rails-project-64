@@ -94,3 +94,5 @@ Lint/AmbiguousRegexpLiteral:
   Enabled: true
 Layout/FirstHashElementIndentation:
   Enabled: true
+Layout/IndentationWidth:
+  Enabled: true
