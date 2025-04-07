@@ -15,7 +15,7 @@ container.d-flex.flex-column.m-0
         = post.time_interval
     .p.d-flex.flex-row
       .me-2
-        = post.likes_count
+        = post.likes.size
       .m-0
         =link_to toggle_post_like_path(post), method: :post, data: { turbo_method: :post }, class: 'link-dark' do
           i.bi class="#{controller.liked_by_current_user? ? 'bi-hand-thumbs-up-fill' : 'bi-hand-thumbs-up' }"

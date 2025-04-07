@@ -12,18 +12,19 @@
 
 ActiveRecord::Schema[8.0].define(version: 2025_03_25_114622) do
   create_table "categories", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_categories_on_name", unique: true
   end
 
   create_table "post_comments", force: :cascade do |t|
     t.string "ancestry", null: false
-    t.integer "user_id", null: false
-    t.integer "post_id", null: false
     t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id", null: false
+    t.integer "post_id", null: false
     t.index ["ancestry"], name: "index_post_comments_on_ancestry"
     t.index ["post_id"], name: "index_post_comments_on_post_id"
     t.index ["user_id"], name: "index_post_comments_on_user_id"
@@ -40,12 +41,13 @@ ActiveRecord::Schema[8.0].define(version: 2025_03_25_114622) do
 
   create_table "posts", force: :cascade do |t|
     t.string "title"
-    t.integer "category_id", null: false
     t.text "body"
-    t.integer "creator_id", null: false
     t.string "status"
+    t.integer "post_likes_count", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "category_id", null: false
+    t.integer "creator_id", null: false
     t.index ["category_id"], name: "index_posts_on_category_id"
     t.index ["creator_id"], name: "index_posts_on_creator_id"
   end

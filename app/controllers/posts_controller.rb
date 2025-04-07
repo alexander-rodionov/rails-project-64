@@ -35,7 +35,7 @@ class PostsController < ApplicationController
   def new_comment(parent)
     case parent
     when Post
-      parent.post_comments.new
+      parent.comments.new
     when PostComment
       parent.children.new
     else
@@ -44,7 +44,7 @@ class PostsController < ApplicationController
   end
 
   def liked_by_current_user?
-    @post.post_likes.exists?(user: current_user)
+    @post.likes.exists?(user: current_user)
   end
 
   private

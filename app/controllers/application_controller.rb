@@ -21,12 +21,14 @@ class ApplicationController < ActionController::Base
   end
 
   def capture_to_sentry(exception)
-    Sentry.with_scope do |scope|
-      scope.set_context(
-        'params',
-        params.to_unsafe_h
-      )
-      Sentry.capture_exception(exception)
+    if Rails.application.config.enable_sentry
+      Sentry.with_scope do |scope|
+        scope.set_context(
+          'params',
+          params.to_unsafe_h
+        )
+        Sentry.capture_exception(exception)
+      end
     end
     raise exception
   end

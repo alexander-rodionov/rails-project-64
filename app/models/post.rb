@@ -4,17 +4,15 @@ class Post < ApplicationRecord
   include ActionView::Helpers::DateHelper
   belongs_to :category
   belongs_to :creator, class_name: 'User'
+
   has_many :post_comments
-  has_many :post_likes
-  alias likes post_likes
+
   validates :title, length: { minimum: 5, maximum: 255 }
   validates :body, length: { minimum: 200, maximum: 4000 }
 
   scope :latest, -> { order(created_at: :desc) }
 
-  def likes_count
-    post_likes.size
-  end
+  has_many :likes, class_name: 'PostLike', dependent: :destroy
 
   def time_interval
     distance_of_time_in_words(created_at, Time.current)

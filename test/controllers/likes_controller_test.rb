@@ -13,7 +13,7 @@ class LikesControllerTest < ActionDispatch::IntegrationTest
     # this comment is to overcome git actions failure
     @post = posts(:post_one)
     sign_in(@user)
-    @post.post_likes.destroy_all
+    @post.likes.destroy_all
     post post_like_path(@post)
     assert_response :redirect
     assert { PostLike.exists?(post: @post, user: @user) }
@@ -30,7 +30,7 @@ class LikesControllerTest < ActionDispatch::IntegrationTest
   test 'should like toggle' do
     @post = posts(:post_one)
     sign_in(@user)
-    @post.post_likes.delete_all
+    @post.likes.delete_all
     post toggle_post_like_path(@post)
     assert_response :redirect
     assert { PostLike.exists?(post: @post, user: @user) }
@@ -41,7 +41,7 @@ class LikesControllerTest < ActionDispatch::IntegrationTest
 
   test 'should like create unsigned' do
     @post = posts(:post_one)
-    @post.post_likes.delete_all
+    @post.likes.delete_all
     post post_like_path(@post)
     assert_redirected_to new_user_session_path
   end

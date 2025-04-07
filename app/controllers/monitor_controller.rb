@@ -6,7 +6,9 @@ class MonitorController < ApplicationController
   end
 
   def sentry_check
-    Sentry.capture_exception(Exception.new('Sentry test exception'))
+    if Rails.application.config.enable_sentry
+      Sentry.capture_exception(Exception.new('Sentry test exception'))
+    end
     redirect_to '/'
   end
 end

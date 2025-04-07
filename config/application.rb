@@ -29,9 +29,13 @@ module RailsProject64
       g.template_engine :slim
     end
 
-    Rails.logger = ActiveSupport::TaggedLogging.new(
-      Sentry::Logger.new($stdout)
-    )
-    config.log_level = :debug
+    config.enable_sentry = false
+
+    if config.enable_sentry
+      Rails.logger = ActiveSupport::TaggedLogging.new(
+        Sentry::Logger.new($stdout)
+      )
+      config.log_level = :debug
+    end
   end
 end
