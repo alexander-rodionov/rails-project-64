@@ -108,3 +108,6 @@ Layout/IndentationConsistency:
 Layout/IndentationStyle:
   Enabled: true
   IndentationWidth: 2
+
+Layout/ExtraSpacing:
+  Enabled: true
