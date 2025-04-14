@@ -2,20 +2,34 @@
 
 class CommentsController < ApplicationController
   before_action :authenticate_user!
-  def create
-    return render_unauthorized unless user_signed_in?
 
-    values = params.require(:post_comment).permit(:parent_id, :content)
-    post = Post.find(params.require(:post_id))
-    parent = values[:parent_id].blank? ? nil : PostComment.find(values[:parent_id])
-    @comment = PostComment.create(parent: parent, post: post, user: current_user, content: values[:content])
-    if @comment.new_record?
-      error_text = @comment.errors.map do |v|
-        "#{PostComment.human_attribute_name(v.attribute)} #{@comment.errors[v.attribute.to_sym].join(', ')}"
-      end.join('\n')
-      redirect_to post_path(post.id), id: post.id, alert: error_text
+  def create
+    @post = current_post
+    @parent = parent_comment
+
+    @comment = current_user.comments.build(**params_permitted.to_hash, post: @post, parent: @parent)
+
+    if @comment.save
+      flash[:success] = t('messages.comment_created')
     else
-      redirect_to post_path(post.id), success: t('messages.comment_created')
+      flash[:alert] = @comment.errors.full_messages.join('. ')
+    end
+    redirect_to post_path(@post)
+  end
+
+  private
+
+  def params_permitted
+    @params_permitted || @params_permitted = params.require(:post_comment).permit(:parent_id, :content)
+  end
+
+  def current_post
+    Post.find(params[:post_id])
+  end
+
+  def parent_comment
+    unless params_permitted[:parent_id].blank?
+      PostComment.find(params_permitted[:parent_id])
     end
   end
 end
