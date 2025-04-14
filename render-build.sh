@@ -10,13 +10,13 @@ bundle exec rails assets:clean
 echo "Doing database users reset"
 
 psql "${DB_URL}" -c "
-  DO $$ DECLARE
+  DO \$\$ DECLARE
       r RECORD;
   BEGIN
       FOR r IN (SELECT tablename FROM pg_tables WHERE schemaname = current_schema()) LOOP
           EXECUTE 'DROP TABLE IF EXISTS ' || quote_ident(r.tablename) || ' CASCADE';
       END LOOP;
-  END $$;
+  END \$\$;
 "
 
 bundle exec rails db:migrate
