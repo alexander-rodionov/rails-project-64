@@ -8,10 +8,14 @@ bundle install
 bundle exec rails assets:precompile
 bundle exec rails assets:clean
 
+echo "Doing database users reset"
+
 psql "${DB_URL}" -c "SELECT pg_terminate_backend(pg_stat_activity.pid) 
                       FROM pg_stat_activity 
                       WHERE pg_stat_activity.datname = '${DB_DATABASE}' 
                       AND pid <> pg_backend_pid();" || true
+
+sleep 0.5
 
 bundle exec rails db:reset
 
