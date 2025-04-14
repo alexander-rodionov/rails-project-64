@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# exit on error
 set -o errexit
 
 DB_URL="postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_DATABASE}"
@@ -10,12 +9,16 @@ bundle exec rails assets:clean
 
 echo "Doing database users reset"
 
-psql "${DB_URL}" -c "SELECT pg_terminate_backend(pg_stat_activity.pid) 
-                      FROM pg_stat_activity 
-                      WHERE pg_stat_activity.datname = '${DB_DATABASE}' 
-                      AND pid <> pg_backend_pid();" || true
+psql "${DB_URL}" -c "
+  DO $$ DECLARE
+      r RECORD;
+  BEGIN
+      FOR r IN (SELECT tablename FROM pg_tables WHERE schemaname = current_schema()) LOOP
+          EXECUTE 'DROP TABLE IF EXISTS ' || quote_ident(r.tablename) || ' CASCADE';
+      END LOOP;
+  END $$;
+"
 
-sleep 0.5
-
-bundle exec rails db:reset
+bundle exec rails db:migrate
+bundle exec rails db:seed
 

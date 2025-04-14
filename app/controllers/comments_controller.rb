@@ -28,8 +28,8 @@ class CommentsController < ApplicationController
   end
 
   def parent_comment
-    if params_permitted[:parent_id].present?
-      PostComment.find(params_permitted[:parent_id])
-    end
+    return if params_permitted[:parent_id].blank?
+    
+    PostComment.find(params_permitted[:parent_id])
   end
 end
