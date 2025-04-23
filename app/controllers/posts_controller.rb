@@ -2,7 +2,7 @@
 
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: %i[index show]
-  before_action :parse_current_post, only: %i[show]
+  before_action :set_current_post, only: %i[show]
 
   def index
     @posts = Post.latest.all
@@ -47,13 +47,17 @@ class PostsController < ApplicationController
     @post.likes.exists?(user: current_user)
   end
 
+  def liked?
+    @post.likes.exists?(user: current_user)
+  end
+
   private
 
   def post_params
     params.require(:post).permit(%i[title body category_id])
   end
 
-  def parse_current_post
+  def set_current_post
     @post = Post.find(params.require(:id))
   rescue ActiveRecord::RecordNotFound
     redirect_to posts_path, alert: t('post.not_found')

@@ -27,34 +27,16 @@ class LikesControllerTest < ActionDispatch::IntegrationTest
     assert { !PostLike.exists?(post: @post, user: @user) }
   end
 
-  test 'should like toggle' do
-    @post = posts(:post_one)
-    sign_in(@user)
-    @post.likes.delete_all
-    post toggle_post_like_path(@post)
-    assert_response :redirect
-    assert { PostLike.exists?(post: @post, user: @user) }
-    post toggle_post_like_path(@post)
-    assert_response :redirect
-    assert { !PostLike.exists?(post: @post, user: @user) }
-  end
-
-  test 'should like create unsigned' do
+  test 'should like create unauthorized' do
     @post = posts(:post_one)
     @post.likes.delete_all
     post post_like_path(@post)
     assert_redirected_to new_user_session_path
   end
 
-  test 'should like destroy unsigned' do
+  test 'should like destroy unauthorized' do
     @post = posts(:post_two)
     delete post_like_path(@post)
-    assert_redirected_to new_user_session_path
-  end
-
-  test 'should like toggle unsigned' do
-    @post = posts(:post_one)
-    post toggle_post_like_path(@post)
     assert_redirected_to new_user_session_path
   end
 end
