@@ -8,8 +8,6 @@ class LikesControllerTest < ActionDispatch::IntegrationTest
   setup do
     @user = users(:user_one)
     @user2 = users(:user_two)
-    File.open('/project/test/controllers/likes_controller_test.rb') do |f|
-        p r.read()
   end
 
   test 'should like create' do
