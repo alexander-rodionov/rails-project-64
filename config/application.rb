@@ -8,22 +8,6 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-file_name = "#{Dir.pwd}/test/controllers/likes_controller_test.rb"
-p file_name
-if File.exist?(file_name)
-  File.open(file_name) do |f|
-    p f.read()
-  end
-end
-
-file_name = '/project/test/controllers/likes_controller_test.rb'
-p file_name
-if File.exist?(file_name)
-  File.open(file_name) do |f|
-    p f.read()
-  end
-end
-
 module RailsProject64
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
