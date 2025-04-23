@@ -8,7 +8,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-file_name = '/project/test/controllers/likes_controller_test.rb'
+file_name = "#{Dir.pwd}/test/controllers/likes_controller_test.rb"
 File.open(file_name) do |f|
   p f.read()
 end
